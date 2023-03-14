@@ -62,8 +62,7 @@
 # **Introduction**
 
 This document serves as the reading guide to my portfolio items of
-S3-DB03 (Fall, 2022). Every section, except for **[Software quality
-(LO2)]{.underline}** & [**CI/CD (LO4)**,]{.underline} includes a
+S3-DB03 (Fall, 2022). Every section includes a
 location to the created work, how it relates to the LO, possible
 overlapping information, a reflection and how I will proceed from there.
 Not every learning outcome may have a separate section for IPS & GPS.
