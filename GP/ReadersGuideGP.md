@@ -21,82 +21,43 @@
 |------------|--------------|-----------------------------------------|
 
 
-# Contents {#contents .TOC-Heading .unnumbered}
+## Table of Contents
 
-[**1.** **Introduction** [4]][4]
+1. [Introduction](#introduction)
+2. [Web application (LO1)](#web-application-lo1)
+   1. [Work](#work)
+   2. [Reflection](#reflection)
+   3. [Next steps](#next-steps)
+3. [Agile method (LO3)](#agile-method-lo3)
+   1. [Work](#work-1)
+   2. [Reflection](#reflection-1)
+   3. [Next steps](#next-steps-1)
+4. [Cultural differences and ethics (LO5)](#cultural-differences-and-ethics-lo5)
+   1. [Work](#work-2)
+   2. [Reflection](#reflection-2)
+   3. [Next steps](#next-steps-2)
+5. [Requirements and design (LO6)](#requirements-and-design-lo6)
+   1. [Work](#work-3)
+      1. [Sprint 1](#sprint-1)
+      2. [Sprint 2](#sprint-2)
+   2. [Reflection](#reflection-3)
+   3. [Next steps](#next-steps-3)
+6. [Business processes (LO7)](#business-processes-lo7)
+   1. [Work](#work-4)
+      1. [Sprint 1](#sprint-1-1)
+   2. [Reflection](#reflection-4)
+   3. [Next steps](#next-steps-4)
+7. [Professional (LO8)](#professional-lo8)
+   1. [Work](#work-5)
+      1. [GPS](#gps)
+   2. [Reflection](#reflection-5)
+   3. [Next steps](#next-steps-5)
+8. [Reflection](#reflection-6)
+   1. [GPS](#gps-1)
+      1. [What went well](#what-went-well)
+      2. [What could have gone better](#what-could-have-gone-better)
+      3. [Next steps](#next-steps-6)
 
-[**2.** **Web application (LO1)** [5]][5]
-
-[2.1 Work [5][1]][1]
-
-[2.2 Reflection [5][2]][2]
-
-[2.3 Next steps [5][3]][3]
-
-[**3.** **Software quality (LO2)** [6]][6]
-
-[**4.** **Agile method (LO3)** [6][7]][7]
-
-[4.1 Work [6][8]][8]
-
-[4.2 Reflection [6][9]][9]
-
-[4.3 Next steps [7]][7]
-
-[**5.** **CI/CD (LO4)** [8]][8]
-
-[**6.** **Cultural differences and ethics (LO5)** [8][10]][10]
-
-[6.1 Work [8][11]][11]
-
-[6.2 Reflection [8][12]][12]
-
-[6.3 Next steps [9]][9]
-
-[**7.** **Requirements and design (LO6)** [10]][10]
-
-[7.1 Work [10][13]][13]
-
-[7.1.1 Sprint 1 [10][14]][14]
-
-[7.1.2 Sprint 2 [10][15]][15]
-
-[7.2 Reflection [10][16]][16]
-
-[7.3 Next steps [10][17]][17]
-
-[**8.** **Business processes (LO7)** [11]][11]
-
-[8.1 Work [11][18]][18]
-
-[8.1.1 Sprint 1 [11][19]][19]
-
-[8.2 Reflection [11][20]][20]
-
-[8.3 Next steps [11][21]][21]
-
-[**9.** **Professional (LO8)** [12]][12]
-
-[9.1 Work [12][22]][22]
-
-[9.1.1 GPS [12][23]][23]
-
-[9.2 Reflection [13]][13]
-
-[9.3 Next steps [14]][14]
-
-[**10.** **Reflection** [15]][15]
-
-[10.1 GPS [15][24]][24]
-
-[10.1.1 What went well [15][25]][25]
-
-[10.1.2 What could have gone better [15][26]][26]
-
-[10.1.3 Next steps [15][27]][27]
-
-*\
-*
 
 # **Introduction**
 
@@ -115,7 +76,7 @@ Please note that bold and underlined text indicates a clickable link. If
 this link does not work, please follow the specified path to find the
 file(s).
 
-# ** ****Web application (LO1)**
+# **Web application (LO1)**
 
 ## Work
 
@@ -172,21 +133,6 @@ I have gained some experience with JavaScript. I even feel confident
 enough in taking on the challenge of using TypeScript. In addition, I
 hope to show more UX in my next project and perform more usability tests
 as they are very interesting and I learn a lot from observing users.
-
-# **Software quality (LO2)**
-
-  --------------------------------------------------------------------------
-                 Orienting                                    
-  -------------- -------------- -------------- -------------- --------------
-
-  --------------------------------------------------------------------------
-
-*Self-rating*
-
-I read the Canvas pages and watched a few videos about the concept. I
-decided to not further work on this learning outcome once the decision
-was made to retake the semester. I bought the books "Clean Code" and
-"The Pragmatic Programmer" to better understand this subject.
 
 # **Agile method (LO3)**
 
@@ -249,20 +195,6 @@ what role I will have in the next project, I will try to keep on
 the projects yet to come. Additionally, I hope to try out other roles
 within the Scrum team too. This is, in my opinion, the only way to truly
 understand a role or process.
-
-# **CI/CD (LO4)**
-
-  --------------------------------------------------------------------------
-                 Orienting                                    
-  -------------- -------------- -------------- -------------- --------------
-
-  --------------------------------------------------------------------------
-
-*Self-rating*
-
-I read the Canvas pages and watched a few videos about the concept. I
-also made a start with Docker. I decided to not further work on this
-learning outcome once the decision was made to retake the semester.
 
 # **Cultural differences and ethics (LO5)**
 
