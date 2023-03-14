@@ -1,25 +1,8 @@
 | Version    | Sprint       | Changes                                 |
 |------------|--------------|-----------------------------------------|
-| 1.0        | 1            | - Initial version                       |
-|            |              | - Setting up the document structure     |
-|------------|--------------|-----------------------------------------|
-| 1.1        | 2            | - Updated the Web Application section   |
-|            |              | - Updated the Agile items section       |
-|            |              | - Updated the Requirements and design   |
-|            |              |   section                               |
-|            |              | - Updated the Business Process section  |
-|            |              | - Updated the Professional section      |
-|            |              | - Updated the Reflection section        |
-|------------|--------------|-----------------------------------------|
-| 2          | 5            | - Updated layout                        |
-|            |              | - Finalized the Web Application section |
-|------------|--------------|-----------------------------------------|
-| 3          | 6            | - Finalized Professional section        |
-|            |              | - Finalized Cultural awareness and      |
-|            |              |   ethics section                        |
-|            |              | - Updated Agile section                 |
-|------------|--------------|-----------------------------------------|
+| 1.0        | 1            | Uploading all of the GP files, including the reader's guide, [here](GP/).
 
+<!--
 
 ## Table of Contents
 
@@ -630,3 +613,7 @@ clear idea of what needs to be done.
   {width="6.268055555555556in" height="2.3375in"}
   [28]: ./media/image3.png {width="6.268055555555556in"
   height="1.7229166666666667in"}
+  
+-->
+
+More to come.
