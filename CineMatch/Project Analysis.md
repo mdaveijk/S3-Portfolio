@@ -18,7 +18,7 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 
 
 ## 2. C4-Model
-<span style="color:blue">This text is blue</span>
+TODO
 
 ## 3. User Stories and Quality Measurement
 | ID | Actor | User Story | Priority | Acceptance Criteria |
