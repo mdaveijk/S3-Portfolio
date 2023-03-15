@@ -4,11 +4,11 @@
 </div>
 
 ## Table of Contents
-1. [Project Description](#project-description)
-2. [C4-Model](#c4-model)
-3. [User Stories and Quality Measurement](#user-stories-and-quality-measurement)
-4. [User Interface Sketches](#user-interface-sketches)
-5. [Test Methodologies](#test-methodologies)
+1. [Project Description](#1-project-description)
+2. [C4-Model](#2-c4-model)
+3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
+4. [User Interface Sketches](#4-user-interface-sketches)
+5. [Test Methodologies](#5-test-methodologies)
 
 ## 1. Project Description
 CineMatch is a software project that allows users to plan a visit to a certain movie, within a certain timeslot and location and let the software find a match with another user that has scheduled for a matching or similar movie (genre), timeslot or location. Once a match has been made, users can communicate through the application to decide on further details and leave a review about their overall experience afterwards. 
