@@ -6,7 +6,7 @@
 ## Table of Contents
 1. [Project Description](#1-project-description)
 2. [C4-Model](#2-c4-model)
-	1. [System Context](#2.1-system-context-diagram)
+	1. [System Context](#21-system-context-diagram)
 3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
 4. [User Interface Sketches](#4-user-interface-sketches)
 5. [Test Methodologies](#5-test-methodologies)
@@ -21,7 +21,7 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 ## 2. C4-Model
 #### 2.1 System Context Diagram
 
-![[SystemContext_CineMatch.png]]
+![SystemContext_CineMatch.png](/Media/SystemContext_CineMatch.png)
 
 ## 3. User Stories and Quality Measurement
 | ID | Actor | User Story | Priority | Acceptance Criteria |
