@@ -1,6 +1,6 @@
 # CineMatch Project Analysis
 <div style="text-align:center">
-<img src="/Media/cinematchlogo.png" alt="CineMatch logo" width="100px" />
+<img src="/Media/cinematchlogo.png" alt="CineMatch logo" width="50%" />
 </div>
 
 ## Table of Contents
@@ -22,7 +22,10 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 ## 2. C4-Model
 #### 2.1 System Context Diagram
 
-![SystemContext_CineMatch.png](/Media/SystemContext_CineMatch.png)
+<div style="text-align:center">
+<img src="/Media/SystemContext_CineMatch.png" alt="CineMatch Dontext Diagram" width="50%" />
+</div>
+<!-- ![SystemContext_CineMatch.png](/Media/SystemContext_CineMatch.png) -->
 
 ## 3. User Stories and Quality Measurement
 
