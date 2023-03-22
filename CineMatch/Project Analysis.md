@@ -6,8 +6,9 @@
 ## Table of Contents
 1. [Project Description](#1-project-description)
 2. [C4-Model](#2-c4-model)
-	1. [System Context](#2.1-system-context-diagram)
+	1. [System Context](#21-system-context-diagram)
 3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
+	1. [Definition of Done](31definition-of-done)
 4. [User Interface Sketches](#4-user-interface-sketches)
 5. [Test Methodologies](#5-test-methodologies)
 
@@ -21,11 +22,38 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 ## 2. C4-Model
 #### 2.1 System Context Diagram
 
-![[SystemContext_CineMatch.png]]
+![SystemContext_CineMatch.png](/Media/SystemContext_CineMatch.png)
 
 ## 3. User Stories and Quality Measurement
+
+Table 1 shows all (current) CineMatch User Stories sorted by priority.
+
+**Table 1**
+
+_All Stories Sorted through the MoSCoW-method with the corresponding acceptance criteria_
 | ID | Actor | User Story | Priority | Acceptance Criteria |
 |----|-------|------------|----------|---------------------|
+| US-01 | User | As a user, I want to be able to schedule a cinema visit so I can get a match with someone else and meet new people with similar taste in movies. | M | <ul> <li> The user can choose to get matched on one or more of the following subjects: <ul> - Movie <br> - Movie genre <br> - Available time slot <br> - Date <br> - Location </ul> </li> <li> The user should be able to select a movie from a list of available movies. </li> <li> The system should suggest matches with other users who have similar movie preferences and are available to see the movie at the same time and location. </li> <li> The user should be able to specify the maximum distance they are willing to travel to the cinema. </li> <li> The user should be able to specify the date and time they want to see the movie. </li> <li> The user should be able to specify their movie preferences, such as genre or specific movies they want to see. </li> <li> The user should not be able to schedule a visit in the past. </li> </ul>
+| US-02 | User | As a user, I want to see an overview from all open scheduled visits by other users so I can find a match by myself. | M | <ul><li>The system should display a list of all open scheduled visits from other users.</li> <li>The list should include details such as the movie, date and time, and location of the scheduled visit.</li><li>The user should be able to filter the list by movie, date, time, and location.</li><li>The system should indicate whether a scheduled visit has a match or not.</li><li>The user should be able to sort the list by movie, date, time, and location.</li><li>The user should be able to click on a scheduled visit to view more details about it.</li><li>The system should update the list in real-time to show any new scheduled visits.</li><li>The system should remove scheduled visits that have passed.</li></ul>
+| US-03 | Admin | As a website administrator, I want users to create an account to improve the security of the application and protect user data. | M | <ul><li>The system should display a registration form for users to create an account.</li><li>The registration form should require the user's email address and a password.</li><li>The system should verify that the email address is unique and not already registered.</li><li>The system should encrypt and store the user's password securely.</li><li>The system should display an error message if the user enters an invalid email address or password.</li><li>The system should send a confirmation email to the user to verify their email address.</li><li>The user should be able to log in to their account using their email address and password.</li><li>The system should log out users automatically after a certain period of inactivity.</li></ul> |
+| US-04 | User | As a user, I want to decide whether a match works for me so I won't get matched with the same person every time. | M | <ul><li>The system should allow the user to accept or decline a match suggestion.</li><li>If the user declines a match suggestion, the system should suggest a new match.</li><li>The user should be able to view the profile of the suggested match before accepting or declining.</li><li>The user should be able to set preferences for the types of matches they want to receive.</li><li>The system should take into account the user's match preferences when suggesting matches.</li><li>The user should be able to provide feedback on the match suggestion to improve future matches.</li><li>The system should not suggest a match that the user has declined previously.</li><li>The system should limit the number of times a user can decline a match suggestion.</li></ul> |
+| US-05 | User | As a user, I want to know what movies are currently playing in theaters so that I can decide which movie to watch. | S | <ul><li>The system should display a list of all movies currently playing in theaters.</li><li>The list should include details such as the movie title, genre, rating, and runtime.</li><li>The user should be able to filter the list by genre, rating, and runtime.</li><li>The user should be able to sort the list by movie title, genre, rating, and runtime.</li><li>The user should be able to click on a movie to view more details about it.</li><li>The system should indicate which theaters are showing each movie.</li><li>The system should update the list in real-time to show any new movies in theaters.</li><li>The system should remove movies from the list when they are no longer playing in theaters.</li></ul> |
+| US-06 | User | As a user, I want to be able to share my experience about the visit so others know what to expect when they use the app. | S | <ul><li>The user should be able to rate their experience at the cinema visit.</li><li>The user should be able to write a review about their experience at the cinema visit.</li><li>The review should be limited to a certain number of characters.</li><li>The user should be able to edit their review after submission.</li><li>The user should be able to delete their review.</li><li>The reviews should be visible to other users who view the cinema visit.</li><li>The reviews should be ordered by date and time of submission.</li><li>The reviews should include the user's username or display name.</li></ul> |
+| US-07 | User | As a user, I want to be able to keep a ranked list of movies I want to watch so it will be easy for me to pick the next movie to watch. | S | <ul><li>The user should be able to add movies to their ranked list.</li><li>The user should be able to remove movies from their ranked list.</li><li>The user should be able to reorder the movies on their ranked list.</li><li>The user should be able to view their ranked list at any time.</li><li>The ranked list should be saved between sessions.</li><li>The user should be able to filter movies by genre, release date, or other criteria to add to their ranked list.</li><li>The user should be able to search for movies to add to their ranked list.</li><li>The user should be able to share their ranked list with other users.</li></ul> |
+
+
+
+### 3.1 Definition of Done
+1.  The Story meets all the acceptance criteria.
+2.  The code behind the Story has been reviewed by a senior programmer.
+3.  The code has been optimized for readability and maintainability, using appropriate coding standards and best practices.
+4.  The code has been documented to a sufficient level of detail to allow other team members to understand and modify the code if necessary.
+5.  Automated tests have been created and integrated with the CI/CD pipeline, and have passed successfully.
+6.  The Story can be shown through a demo.
+7.  The Story has been reviewed and approved by the product owner or other relevant stakeholders, and any feedback has been incorporated into the final implementation.
+8.  Any relevant documentation (e.g. release notes, user guides, technical specifications) have been updated to reflect the changes made as part of the Story.
+
+<!-- 
 | 1 | User | Create an account | M | User is able to create a new account with a unique username and password. |
 | 2 | User | Log in and out | M | User is able to log in to their existing account and log out when they are finished. |
 | 3 | User | Search for movies and showtimes | M | User is able to search for movies and see their showtimes. |
@@ -40,12 +68,12 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 | 12 | User | User-friendly application | M | The application is easy to navigate and use. |
 | 13 | User | Responsive application | M | The application works well on both desktop and mobile devices. |
 | 14 | System | Fast response time | M | The application has a fast response time and minimal downtime. |
-| 15 | System | Secure user data | M | The application is secure and protects user data. |
+| 15 | System | Secure user data | M | The application is secure and protects user data. | -->
 
 
 
 ## 4. User Interface Sketches
-Description of User Interface Sketches goes here.
+
 
 ## 5. Test Methodologies
 In addition to the project analysis outlining the design choices and requirements of our software application, there is a separate document that covers our test methodologies. This document details the various testing approaches we are utilizing throughout the software development lifecycle, including unit testing, integration testing, system testing, and acceptance testing. It also describes the specific tools and frameworks we are using to automate our testing processes and ensure the quality and reliability of our software product. By following these rigorous testing procedures, we hope to deliver a high-performing, bug-free application that meets the needs and expectations of our stakeholders.
