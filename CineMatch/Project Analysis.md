@@ -8,7 +8,7 @@
 2. [C4-Model](#2-c4-model)
 	1. [System Context](#21-system-context-diagram)
 3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
-	1. [Definition of Done](31definition-of-done)
+	1. [Definition of Done](#31-definition-of-done)
 4. [User Interface Sketches](#4-user-interface-sketches)
 5. [Test Methodologies](#5-test-methodologies)
 
