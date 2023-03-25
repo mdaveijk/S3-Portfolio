@@ -5,7 +5,7 @@
 
 ## Table of Contents
 1. [Project Description](#1-project-description)
-2. [C4-Model: Architecure of the application](#2-c4-model:-architecture-of-the-application)
+2. [C4-Model: Architecure of the application](#2-c4-model-architecture-of-the-application)
 	1. [System Context](#21-system-context-diagram)
 3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
 	1. [Definition of Done](#31-definition-of-done)
