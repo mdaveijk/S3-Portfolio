@@ -1,7 +1,5 @@
 # CineMatch Project Analysis
-<div style="text-align:center">
-<img src="/Media/cinematchlogo.png" alt="CineMatch logo" width="25%" />
-</div>
+![CineMatch logo|200](/Media/cinematchlogo.png)
 
 ## Table of Contents
 1. [Project Description](#1-project-description)
@@ -24,9 +22,7 @@ The C4-model depicts a visual representation of the architecture of CineMatch. M
 
 #### 2.1 System Context Diagram
 
-<div style="text-align:center">
-<img src="/Media/SystemContext_CineMatch.png" alt="CineMatch Context Diagram" width="50%" />
-</div>
+![CineMatch Context Diagram|500](/Media/SystemContext_CineMatch.png)
 The social cinemagoer is the primary stakeholder for this project, and their satisfaction is a top priority. To streamline the development process and improve user experience, CineMatch makes use of two separate APIs. The first API handles user authorization and authentication, enabling users to sign up using their social media accounts. The second API is the IMDB API, which provides access to the latest movie information and additional data, including images. 
 
 <!-- ![SystemContext_CineMatch.png](/Media/SystemContext_CineMatch.png) -->
@@ -51,7 +47,7 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 | US-09 | User | As a user, I want to be able to share my experience with the movie meetup so others know what to expect when they use the app. | S | <ul><li>The user should be able to rate their movie meetup experience.</li><li>The user should be able to write a review about their movie meetup experience.</li><li>The review should be limited to a certain number of characters.</li><li>The user should be able to edit their review after submission.</li><li>The user should be able to delete their review.</li></ul> |
 | US-10 | User | As a user, I want to be able to read reviews from other users so I can feel more comfortable with using the app. | S | <ul><li>The reviews should be visible to other users.</li><li>The reviews should be ordered by date and time of submission.</li><li>The reviews should include author's name.</li><li>The reviews should display the author's rating alongside their written review.</li><li>The user should be able to report inappropriate or fake reviews for moderation.</li></ul>
 | US-11 | User | As a user, I want to be able to tag the person I went to the cinema with in my review, so they can see my feedback and we can share our experience. | C | <ul><li>The user should be able to tag their match in their review.</li><li>The tagged match should receive a notification when they are tagged in a review.</li><li>The tagged match should be able to accept or decline the tag.</li><li>If the tagged match accepts the tag, their username or display name should be included in the review.</li><li>If the tagged match declines the tag, their username or display name should not be included in the review.</li></ul>
-| US-12 | User | As a user, I want to be able to keep a ranked list of movies I want to watch so it will be easy for me to pick the next movie to watch. | S | <ul><li>The user should be able to add movies to their ranked list.</li><li>The user should be able to remove movies from their ranked list.</li><li>The user should be able to reorder the movies on their ranked list.</li><li>The user should be able to view their ranked list at any time.</li><li>The ranked list should be saved between sessions.</li><li>The user should be able to filter movies by genre, release date, or other criteria to add to their ranked list.</li><li>The user should be able to search for movies to add to their ranked list.</li><li>The user should be able to share their ranked list with other users.</li></ul> |
+| US-12 | User | As a user, I want to be able to keep a ranked list of movies I want to watch so it will be easy for me to pick the next movie to watch. | C | <ul><li>The user should be able to add movies to their ranked list.</li><li>The user should be able to remove movies from their ranked list.</li><li>The user should be able to reorder the movies on their ranked list.</li><li>The user should be able to search for movies to add to their ranked list.</li><li>The user should be able to sort their ranked list by various criteria, such as release date, rating, or genre.</li><li>The user should be able to mark movies as watched or unwatched in their ranked list.</li></ul> |
 
 
 
@@ -86,6 +82,9 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 
 ## 4. User Interface Sketches
 
+### 4.1 Homepage
+![Homepage of CineMatch](Media/Homepage.png)
+The homepage features a number of elements to provide an easy, yet not too busy interface. On the left of the page, there is a block that features a small menu, a section that features the name of friends made through matches displayed in a vertical order and a log out button. This block will be available on every page. The same goes for the top bar that features a CTA button to organise a movie meetup and two buttons for notifications and to access their personal account. Unique to the page are the main content area that will feature a welcome message and tell the user basic information about CineMatch. Additionally, a sign up button is shown in case the user does not have an account yet. Finally, the page has a list of the (upcoming) meetups that the user is part of. 
 
 ## 5. Test Methodologies
 In addition to the project analysis outlining the design choices and requirements of our software application, there is a separate document that covers our test methodologies. This document details the various testing approaches we are utilizing throughout the software development lifecycle, including unit testing, integration testing, system testing, and acceptance testing. It also describes the specific tools and frameworks we are using to automate our testing processes and ensure the quality and reliability of our software product. By following these rigorous testing procedures, we hope to deliver a high-performing, bug-free application that meets the needs and expectations of our stakeholders.
