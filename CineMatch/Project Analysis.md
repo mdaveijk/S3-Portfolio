@@ -1,5 +1,9 @@
 # CineMatch Project Analysis
+<!-- 
 ![CineMatch logo|200](/Media/cinematchlogo.png)
+-->
+<img src="/Media/cinematchlogo.png" alt="CineMatch logo" width="200">
+
 
 ## Table of Contents
 1. [Project Description](#1-project-description)
@@ -21,8 +25,7 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 The C4-model depicts a visual representation of the architecture of CineMatch. Making it easier to understand and communicate for both technical and non-technical stakeholders.
 
 #### 2.1 System Context Diagram
-
-![CineMatch Context Diagram|500](/Media/SystemContext_CineMatch.png)
+<img src="/Media/SystemContext_CineMatch.png" alt="CineMatch Context Diagram" width="600">
 The social cinemagoer is the primary stakeholder for this project, and their satisfaction is a top priority. To streamline the development process and improve user experience, CineMatch makes use of two separate APIs. The first API handles user authorization and authentication, enabling users to sign up using their social media accounts. The second API is the IMDB API, which provides access to the latest movie information and additional data, including images. 
 
 <!-- ![SystemContext_CineMatch.png](/Media/SystemContext_CineMatch.png) -->
@@ -83,7 +86,7 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 ## 4. User Interface Sketches
 
 ### 4.1 Homepage
-![Homepage of CineMatch](Media/Homepage.png)
+<img src="/Media/Homepage.png" alt="Homepage of CineMatch" width="900">
 The homepage features a number of elements to provide an easy, yet not too busy interface. On the left of the page, there is a block that features a small menu, a section that features the name of friends made through matches displayed in a vertical order and a log out button. This block will be available on every page. The same goes for the top bar that features a CTA button to organise a movie meetup and two buttons for notifications and to access their personal account. Unique to the page are the main content area that will feature a welcome message and tell the user basic information about CineMatch. Additionally, a sign up button is shown in case the user does not have an account yet. Finally, the page has a list of the (upcoming) meetups that the user is part of. 
 
 ## 5. Test Methodologies
