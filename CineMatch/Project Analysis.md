@@ -4,6 +4,15 @@
 -->
 <img src="/Media/cinematchlogo.png" alt="CineMatch logo" width="200">
 
+___
+|         |         |
+|:---------------:|:---------------:|
+|   Release:      |   4th of April 2023      |
+|   Version:          |   1.0          |
+|   Location:          |   Eindhoven          |
+|   Project owner:          |   Maurice Schippers          |
+___
+
 
 ## Table of Contents
 1. [Project Description](#1-project-description)
