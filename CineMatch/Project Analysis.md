@@ -14,8 +14,8 @@
 4. [User Interface Sketches](#4-user-interface-sketches)
 	1. [Homepage](#41-homepage)
 	2. [Schedule a visit](#42-schedule-a-visit)
-	3. [Schedule a visit - Possible matches](43-schedule-a-visit-possible-matches)
-	4. [Movie meetup overview page](44-movie-meetup-overview-page)
+	3. [Schedule a visit - Possible matches](#43-schedule-a-visit---possible-matches)
+	4. [Movie meetup overview page](#44-movie-meetup-overview-page)
 5. [Test Methodologies](#5-test-methodologies)
 
 ## 1. Project Description
@@ -88,6 +88,7 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 
 
 ## 4. User Interface Sketches
+Below are four wireframes to give an idea of the main design of CineMatch. The inspiration for these designs came from other cinema-based websites found on dribbble. The first sketches were done on paper and later converted to images using the application Figma. The primary goal was to ensure the features were clear and concise, with easy access to frequently used functions (such as the upper right buttons and left menu), while allowing enough space to avoid clutter and enhance the user experience.
 
 ### 4.1 Homepage
 <img src="/Media/Homepage.png" alt="Homepage of CineMatch" width="800">
