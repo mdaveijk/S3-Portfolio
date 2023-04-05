@@ -12,6 +12,10 @@
 3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
 	1. [Definition of Done](#31-definition-of-done)
 4. [User Interface Sketches](#4-user-interface-sketches)
+	1. [Homepage](#41-homepage)
+	2. [Schedule a visit](#42-schedule-a-visit)
+	3. [Schedule a visit - Possible matches](43-schedule-a-visit-possible-matches)
+	4. [Movie meetup overview page](44-movie-meetup-overview-page)
 5. [Test Methodologies](#5-test-methodologies)
 
 ## 1. Project Description
@@ -86,8 +90,20 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 ## 4. User Interface Sketches
 
 ### 4.1 Homepage
-<img src="/Media/Homepage.png" alt="Homepage of CineMatch" width="900">
+<img src="/Media/Homepage.png" alt="Homepage of CineMatch" width="800">
 The homepage features a number of elements to provide an easy, yet not too busy interface. On the left of the page, there is a block that features a small menu, a section that features the name of friends made through matches displayed in a vertical order and a log out button. This block will be available on every page. The same goes for the top bar that features a CTA button to organise a movie meetup and two buttons for notifications and to access their personal account. Unique to the page are the main content area that will feature a welcome message and tell the user basic information about CineMatch. Additionally, a sign up button is shown in case the user does not have an account yet. Finally, the page has a list of the (upcoming) meetups that the user is part of. 
+
+### 4.2 Schedule a visit
+<img src="/Media/ScheduleAVisit.png" alt="Scheduling a visit - CineMatch" width="800">
+This is the view the user sees when they click the "Let's go to the movies" CTA button. Here, they can submit their preferences when looking for a match, such as their preferred movie, movie genre, location, and more. Once they have selected a movie, a thumbnail of the movie will show up next to the form. If no movie has been selected yet, the thumbnail area will remain empty. To make it easier for the user, there are two lists available: one that displays the movies currently showing (if the user has selected a cinema), and one that shows upcoming movies that are not yet showing anywhere.
+
+### 4.3 Schedule a visit - Possible matches
+<img src="/Media/ScheduleAVisitPossibleMatches.png" alt="Scheduling a visit with possible matches - CineMatch" width="800">
+This is the view that the user sees after submitting the form to schedule a visit. The system displays any possible matches based on the user's preferences. Each match shows the avatar of the matched user, their name, the matching information (for example, preferred movie, movie genre, location), and the preferred date and time slot. The matching information will be shown in bold text to help the user quickly identify key details. If the user is interested in a suggested match, they can connect with the user by selecting the "Confirm match" button.
+
+### 4.4 Movie meetup overview page
+<img src="/Media/MovieMeetupOverview.png" alt="Overview of all open movie meetups - CineMatch" width="800">
+This view displays a complete overview of all currently available movie meetups that the user can choose from. Each meetup shows the avatar of the organiser, their name, and the details of the meetup, which could be the movie, a genre, location or a preferred date and time. It also shows the current status of the meetup, such as whether it's open to join or already full. If the active user is interested in the meetup, they can connect with the organiser by selecting the "Show interest" button.
 
 ## 5. Test Methodologies
 In addition to the project analysis outlining the design choices and requirements of our software application, there is a separate document that covers our test methodologies. This document details the various testing approaches we are utilizing throughout the software development lifecycle, including unit testing, integration testing, system testing, and acceptance testing. It also describes the specific tools and frameworks we are using to automate our testing processes and ensure the quality and reliability of our software product. By following these rigorous testing procedures, we hope to deliver a high-performing, bug-free application that meets the needs and expectations of our stakeholders.
