@@ -14,8 +14,8 @@
 4. [User Interface Sketches](#4-user-interface-sketches)
 	1. [Homepage](#41-homepage)
 	2. [Schedule a visit](#42-schedule-a-visit)
-	3. [Schedule a visit - Possible matches](43-schedule-a-visit-possible-matches)
-	4. [Movie meetup overview page](44-movie-meetup-overview-page)
+	3. [Schedule a visit - Possible matches](#43-schedule-a-visit---possible-matches)
+	4. [Movie meetup overview page](#44-movie-meetup-overview-page)
 5. [Test Methodologies](#5-test-methodologies)
 
 ## 1. Project Description
