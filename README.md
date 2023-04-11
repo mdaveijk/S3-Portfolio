@@ -1,4 +1,6 @@
-Author: Maurice Schippers 
+# Reader's Guide
+
+Author: Maurice Schippers  
 Class: Software - S3-DB01 – Eindhoven 
 Course: S-DB-IPS
 Coach: Jean-Paul Lighthart
