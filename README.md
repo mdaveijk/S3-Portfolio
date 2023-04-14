@@ -1,10 +1,10 @@
 # Reader's Guide
 
-Author: Maurice Schippers  
-Class: Software - S3-DB01 – Eindhoven
-Course: S-DB-IPS
-Coach: Jean-Paul Lighthart
-Date published: 14 April 2023
+Author: Maurice Schippers  <br> 
+Class: Software - S3-DB01 – Eindhoven<br> 
+Course: S-DB-IPS <br> 
+Coach: Jean-Paul Lighthart <br> 
+Date published: 14 April 2023<br> 
 Version: 1.1
 
 
@@ -88,14 +88,14 @@ _Reserved for the report I want to write on the webinar on better user stories t
 
 During the previous semester, I wrote an elaborate paper covering both ethics and cultural differences in IT. In particular, I discuss "The ACM Code of Ethics and Professional Conduct" and how they are applied with real-life examples.  The second part of the paper focused on cultural differences, including how Fontys strives to support its students in this regard, the distinction between cultural and personal traits, and my own experiences of collaborating with students from different cultures. I was given the **Advanced** rating. 
 
-📄 **[Ethics and cultural differences](GP/LO5_Cultural_differences_and_ethics/Cultural_Differences_and_ethics.pdf)**
+📄 **[Ethics and cultural differences](GP/LO5_Cultural_differences_and_ethics/Cultural_Differences_and_ethics_Report.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 3.3 Business processes (LO7)
 
 During the previous semester, I conducted a process analysis of the group project context. I communicated with the stakeholder(s) regarding possible changes and to confirm the accuracy of the information. I was given the **Proficient** rating. 
 
-📄 **[Process analysis of the group project](GP/LO7_BusinessProcesses/GP_ProjectAnalysis.pdf)**
+📄 **[Process analysis of the group project](GP/LO7_BusinessProcesses/GP_ProcessAnalysis.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 4. Reflection
