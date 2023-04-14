@@ -4,19 +4,30 @@
 -->
 <img src="/Media/cinematchlogo.png" alt="CineMatch logo" width="200">
 
+___
+|         |         |
+|:---------------:|:---------------:|
+|   Release:      |   4th of April 2023      |
+|   Version:          |   1.0          |
+|   Location:          |   Eindhoven          |
+|   Project owner:          |   Maurice Schippers          |
+___
+
 
 ## Table of Contents
 1. [Project Description](#1-project-description)
-2. [C4-Model: Architecure of the application](#2-c4-model-architecture-of-the-application)
-	1. [System Context](#21-system-context-diagram)
-3. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
+2. [System Architecture Overview](#2-system-architecture-overview)
+	1. [Components](21-cinematch-components)
+	2. [The C4-model](#22-the-c4-model)
+	3. [System Context](221-system-context-diagram)
+4. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
 	1. [Definition of Done](#31-definition-of-done)
-4. [User Interface Sketches](#4-user-interface-sketches)
+5. [User Interface Sketches](#4-user-interface-sketches)
 	1. [Homepage](#41-homepage)
 	2. [Schedule a visit](#42-schedule-a-visit)
 	3. [Schedule a visit - Possible matches](#43-schedule-a-visit---possible-matches)
 	4. [Movie meetup overview page](#44-movie-meetup-overview-page)
-5. [Test Methodologies](#5-test-methodologies)
+6. [Test Methodologies](#5-test-methodologies)
 
 ## 1. Project Description
 CineMatch is a software project that allows users to plan a visit or **movie meetup** to a certain movie, within a certain timeslot and location and let the software find a match with another user that has scheduled for a matching or similar movie (genre), timeslot or location. Once a match has been made, users can communicate through the application to decide on further details and leave a review about their overall experience afterwards. 
@@ -25,10 +36,14 @@ While similar in some respects to popular dating apps, such as Tinder, CineMatch
 The need for a ‘buddy’ to do activities with is high nowadays. Especially after COVID-19, people are struggling to be more social and finding an activity within a shared interest can be hard. This initiative seeks to alleviate social isolation and encourage social interaction by enabling users to connect with others interested in going to the movies. There are currently no (popular) projects like this, except for a few that have a broad range of activities and not just a cinema visit. This might give users the opportunity to have an app to go to, a central place, when they do not want to be by themselves in the cinema. The project's ultimate goal is to expand beyond the cinema and encompass a broader range of activities.
 
 
-## 2. C4-Model: Architecture of the application
+## 2. System Architecture Overview
+
+### 2.1 CineMatch components
+
+### 2.2 The C4-model
 The C4-model depicts a visual representation of the architecture of CineMatch. Making it easier to understand and communicate for both technical and non-technical stakeholders.
 
-#### 2.1 System Context Diagram
+#### 2.2.1 System Context Diagram
 <img src="/Media/SystemContext_CineMatch.png" alt="CineMatch Context Diagram" width="600">
 The social cinemagoer is the primary stakeholder for this project, and their satisfaction is a top priority. To streamline the development process and improve user experience, CineMatch makes use of two separate APIs. The first API handles user authorization and authentication, enabling users to sign up using their social media accounts. The second API is the IMDB API, which provides access to the latest movie information and additional data, including images. 
 
