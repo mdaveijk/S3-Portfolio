@@ -1,10 +1,10 @@
 # Reader's Guide
 
 Author: Maurice Schippers  
-Class: Software - S3-DB01 – Eindhoven 
+Class: Software - S3-DB01 – Eindhoven
 Course: S-DB-IPS
 Coach: Jean-Paul Lighthart
-Date published: 11 April 2023
+Date published: 14 April 2023
 Version: 1.1
 
 
@@ -12,6 +12,8 @@ Version: 1.1
 | Version    | Sprint       | Changes                                 |
 |------------|--------------|-----------------------------------------|
 | 1.0        | 1            | Uploaded all of the GP files, including the reader's guide, [here](GP/).
+| 1.1 | 1 | 🆕 Added the introduction chapter. <br> 🆕 Finished the entire GPS section.
+
 
 
 ## Table of Contents
@@ -27,11 +29,8 @@ Version: 1.1
 - [3. GPS](3-gps)
 	- [3.1 Agile method (LO3)](#31-agile-method-lo3)
 		- [3.1.1 Additional experience](#311-additional-experience)
-		- [3.1.2 Previous work](#312-previous-work)
 	- [3.2 Cultural differences and ethics (LO5)](#32-cultural-differences-and-ethics-lo5)
-		- [3.2.1 Previous work](#321-previous-work)
 	- [3.3 Business processes (LO7)](#33-business-processes-lo7)
-		- [3.3.1 Previous work](#331-previous-work)
 - [4. Reflection](#4-reflection)
 	- [4.1 What went well](#41-what-went-well)
 	- [4.2 What could have gone better](#42-what-could-have-gone-better)
@@ -69,15 +68,35 @@ Please note that bold and underlined text indicates a clickable link.
 ## 2.7 Research on concurrency
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 3. GPS
+
+The following sections contain all the work I did in the previous semester for the (mainly) GPS learning outcomes.
+
 ## 3.1 Agile method (LO3)
-### 3.1.1 Additional experience
-### 3.1.2 Previous work
+
+During this semester, I attended a webinar hosted by Mike Cohn on writing better user stories. More information about this experience can be found in the **[Additional Experience](#311-additional-experience)** section. I am using the Scrum approach for my current individual project.
+
+In the previous semester, I wrote two documents: a research paper on agile methodologies and a paper on how I applied it in the group project. I was given the **Advanced** rating. 
+
+📄 **[Agile research](GP/LO3_AgileMethod/AgileMethods_Research.pdf)**
+📄 **[Agile in Practice](GP/LO3_AgileMethod/AgileMethods_InPractice.pdf)**
+
+### 3.1.1 Additional Experience
+_Reserved for the report I want to write on the webinar on better user stories that I attended._
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 3.2 Cultural differences and ethics (LO5)
-### 3.2.1 Previous work
+
+During the previous semester, I wrote an elaborate paper covering both ethics and cultural differences in IT. In particular, I discuss "The ACM Code of Ethics and Professional Conduct" and how they are applied with real-life examples.  The second part of the paper focused on cultural differences, including how Fontys strives to support its students in this regard, the distinction between cultural and personal traits, and my own experiences of collaborating with students from different cultures. I was given the **Advanced** rating. 
+
+📄 **[Ethics and cultural differences](GP/LO5_Cultural_differences_and_ethics/Cultural_Differences_and_ethics.pdf)**
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 3.3 Business processes (LO7)
-### 3.3.1 Previous work
+
+During the previous semester, I conducted a process analysis of the group project context. I communicated with the stakeholder(s) regarding possible changes and to confirm the accuracy of the information. I was given the **Proficient** rating. 
+
+📄 **[Process analysis of the group project](GP/LO7_BusinessProcesses/GP_ProjectAnalysis.pdf)**
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 4. Reflection
 ## 4.1 What went well
