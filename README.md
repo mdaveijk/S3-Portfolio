@@ -62,17 +62,18 @@ Please note that bold and underlined text indicates a clickable link.
 
 I did a thorough comparison of the three most popular frontend frameworks in the last semester, more can be read **[here](#212-last-semester)**.
 
-<!-- TODO -->
+<!-- TODO Write description -->
 
 ### 2.1.1 This semester
 
-<!--  TODO -->
+<!--  TODO Write description -->
 
 ### 2.1.2 Last semester
 
-<!-- TODO -->
+<!-- TODO Write description -->
 
 I was given the **Proficient** rating.
+
 📄 **[Web Application in Practice](GP/LO1_WebApplication/WebApplication_InPractice.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
@@ -84,7 +85,7 @@ I was given the **Proficient** rating.
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.4 Requirements and design (LO6)
 
-<!-- TODO -->
+<!-- TODO Write description -->
 
 ### 2.4.1 This semester
 
@@ -101,10 +102,11 @@ In addition, I have created a story map for the entire project in Jira. Click on
 
 Before it was decided that I would only focus on GPS, I came up with the idea for "VoiceCheck", for my individual project, which I wrote a pitch and an analysis document for. Originally, I had planned to develop this application with Vue.js for the frontend and C# for the backend.
 
-Possibly accompanied by my work in the GPS project which I can't share here, I was given the **Proficient** rating.
+Accompanied by my work in the GPS project where I worked on - among other things - the entity relationship diagram, I was given the **Proficient** rating.
 
 📄 **[VoiceCheck Pitch](GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md)** 
 📄 **[VoiceCheck Project Analysis](GP/LO6_Requirements_and_design/IP_VoiceCheck_Analysis.pdf)**
+📄 **[GP Project Analysis](GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.5 Professional (LO8)
