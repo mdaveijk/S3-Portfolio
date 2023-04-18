@@ -11,7 +11,7 @@ Version: 1.1
 
 | Version    | Sprint       | Changes                                 |
 |------------|--------------|-----------------------------------------|
-| 1.0        | 1            | Uploaded all of the GP files, including the reader's guide, [here](GP/).
+| 1.0        | 1            | 🔹 Uploaded all of the GP files, including the reader's guide, [here](GP/).
 | 1.1 | 1 | 🆕 Added the introduction chapter. <br> 🆕 Finished the entire GPS section.
 
 
@@ -20,13 +20,17 @@ Version: 1.1
 - [1. Introduction](#1-introduction)
 - [2. IPS - CineMatch](#2-ips-cinematch)
 	- [2.1 Web Application (LO1)](#21-web-application-lo1)
+		- [2.1.1 This semester](#211-this-semester)
+		- [2.1.2 Last semester](#212-last-semester)
 	- [2.2 Software quality (LO2)](#22-software-quality-lo2)
 	- [2.3 CI/CD (LO4)](#23-cicd-lo4)
 	- [2.4 Requirements and design (LO6)](#24-requirements-and-design-lo6)
+		- [2.4.1 This semester](#241-this-semester)
+		- [2.4.2 Last semester](#242-last-semester)
 	- [2.5 Professional (LO8)](#25-professional-lo8)
 	- [2.6 Security research on authentication/authorization](#26-security-research-on-authenticationauthorization)
 	- [2.7 Research on concurrency](#27-research-on-concurrency)
-- [3. GPS](3-gps)
+- [3. GPS](#3-gps)
 	- [3.1 Agile method (LO3)](#31-agile-method-lo3)
 		- [3.1.1 Additional experience](#311-additional-experience)
 	- [3.2 Cultural differences and ethics (LO5)](#32-cultural-differences-and-ethics-lo5)
@@ -44,7 +48,8 @@ S3-DB01 (Spring, 2023). For the reader's guide of the previous S3 semester (Fall
 
 This portfolio is organized into two main sections: The IPS and the GPS section. 
 The first section is the IPS section, which contains all of the work I have completed during **this** semester. Each subsection includes a link to the created work, an explanation of how it relates to the learning outcomes (LOs), and notes on any overlapping information regarding LOs. Additionally, if relevant, a link to work from the previous semester is provided.
-The second section is the GPS section, which contains all the LOs related to the GPS and the links to the work I did for them in the previous semester. 
+The second section is the GPS section, which contains all the LOs related to the GPS and the links to the work I did for them in the previous semester. For LO3 (Agile method), I did some additional work during this semester which is also added there.
+
 The final section includes my overall reflection on the semester. This section is divided into subsections, where I look back upon what went well, what could have gone better and decide on what my next steps will be.
 
 Please note that bold and underlined text indicates a clickable link. 
@@ -52,20 +57,64 @@ Please note that bold and underlined text indicates a clickable link.
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 
 # 2. IPS - CineMatch
+
 ## 2.1 Web Application (LO1)
+
+I did a thorough comparison of the three most popular frontend frameworks in the last semester, more can be read **[here](#212-last-semester)**.
+
+<!-- TODO -->
+
+### 2.1.1 This semester
+
+<!--  TODO -->
+
+### 2.1.2 Last semester
+
+<!-- TODO -->
+
+I was given the **Proficient** rating.
+📄 **[Web Application in Practice](GP/LO1_WebApplication/WebApplication_InPractice.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.2 Software quality (LO2)
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.3 CI/CD (LO4)
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.4 Requirements and design (LO6)
+
+<!-- TODO -->
+
+### 2.4.1 This semester
+
+During this semester, I have been working on an extensive project analysis which contains a description of the project, three levels of the C4-model-based system architecture overview, user stories with acceptance criteria, and UI sketches.
+
+In addition, I have created a story map for the entire project in Jira. Click on the image below to see the full image.
+
+📄 **[CineMatch Project Analysis](CineMatch/Project_Analysis.md)**
+
+<img src="/Media/CineMatch-storymapping-board.png" alt="Story map - CineMatch" width="800">
+
+**[⬆️ Back to Table of Contents](#table-of-contents)**
+### 2.4.2 Last semester
+
+Before it was decided that I would only focus on GPS, I came up with the idea for "VoiceCheck", for my individual project, which I wrote a pitch and an analysis document for. Originally, I had planned to develop this application with Vue.js for the frontend and C# for the backend.
+
+Possibly accompanied by my work in the GPS project which I can't share here, I was given the **Proficient** rating.
+
+📄 **[VoiceCheck Pitch](GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md)** 
+📄 **[VoiceCheck Project Analysis](GP/LO6_Requirements_and_design/IP_VoiceCheck_Analysis.pdf)**
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.5 Professional (LO8)
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.6 Security research on authentication/authorization
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.7 Research on concurrency
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 3. GPS
 
