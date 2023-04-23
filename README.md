@@ -2,17 +2,18 @@
 
 Author: Maurice Schippers  <br> 
 Class: Software - S3-DB01 – Eindhoven<br> 
-Course: S-DB-IPS <br> 
-Coach: Jean-Paul Lighthart <br> 
-Date published: 14 April 2023<br> 
-Version: 1.1
+Course: S-DB-IPS  & S-DB-GPS <br> 
+Coach: Jean-Paul Ligthart <br> 
+Date published: 23 April 2023<br> 
+Version: 2.1
 
 
 
 | Version    | Sprint       | Changes                                 |
 |------------|--------------|-----------------------------------------|
 | 1.0        | 1            | 🔹 Uploaded all of the GP files, including the reader's guide, [here](GP/).
-| 1.1 | 1 | 🆕 Added the introduction chapter. <br> 🆕 Finished the entire GPS section.
+| 2.0 | 2 | 🔹 Added the introduction chapter. <br> 🔹 Finished the entire GPS section. <br> 🔹 Started with the IPS section. 
+| 2.1 | 3 | 🆕 Added all relevant documents from last semester to the IPS section.
 
 
 
@@ -58,21 +59,37 @@ Please note that bold and underlined text indicates a clickable link.
 
 # 2. IPS - CineMatch
 
+In this section, I will discuss how I applied the IPS learning outcomes to the development of CineMatch. Upon taking a closer look, I realized that each outcome represents a part of the software development cycle, with **[Professional](#25-professional-lo8)** being a continuous process as developers are always busy with research and improving their skills and knowledge.
+
+During the **[analysis phase](#24-requirements-and-design-lo6)**, I focused on gathering requirements and designing the most suitable architecture for the project. In the **[building phase](#21-web-application-lo1)**, I used React, SpringBoot, and Hibernate as my tech stack of choice to develop the web application. For the **[testing phase](#22-software-quality-lo2)**, I focused on ensuring software quality through various testing techniques. Finally, in the **[release phase](#23-cicd-lo4)**, I plan to use Docker to implement a continuous integration and delivery to complete the software development cycle and release of CineMatch.
+
 ## 2.1 Web Application (LO1)
 
-I did a thorough comparison of the three most popular frontend frameworks in the last semester, more can be read **[here](#212-last-semester)**.
+This learning outcome covers the five key elements of developing a web application: **frontend, distributed communication, backend, data persistence, and user experience**. In both the current and last semester, I wrote a large document detailing how I applied the five elements of this learning outcome to my projects, including the group project of last semester. 
 
-<!-- TODO -->
+Furthermore, to make a well informed decision, I conducted a thorough comparison of the three most popular frontend frameworks during the last semester. The details of this research can be found in the following section **[2.1.2 Last Semester](#212-last-semester)**. 
 
 ### 2.1.1 This semester
 
-<!--  TODO -->
+The document for this semester, which can be found below, is still a work in progress. While the sections about **distributed communication** and **user experience** are yet to be completed, I have already chosen my tech stack for the development of CineMatch. I have decided to use React as my frontend framework, SpringBoot as my backend framework, and Hibernate as my ORM. The reasoning behind my choices can also be found in the document.
+
+Additionally, you can find the links to the repositories for the frontend and backend of CineMatch below.
+
+📄 **[Full Stack Web Application - CineMatch](CineMatch/WebApplication_InPractice.md)** <br>
+🌐 **[CineMatch frontend](https://github.com/mdaveijk/S3-IP-CineMatch-Frontend)** | ⚙️ **[CineMatch backend](https://github.com/mdaveijk/S3-IP-CineMatch)**
+
 
 ### 2.1.2 Last semester
 
-<!-- TODO -->
+During the last semester, I wrote a large document detailing how I addressed the five elements of this learning outcome in both the group project and my individual project. I'm very satisfied with how it came out. As a source of inspiration for the user experience part, I read the book 'Don't Make Me Think' by Steve Krug. This book was very helpful and inspired me a lot.
+
+At the beginning of that semester, I had little to no knowledge of JavaScript, which played a crucial role in my choice of frontend framework. So, I planned to develop this application with Vue.js for the frontend and C# for the backend. My research regarding the frameworks can be found under the following sections:
+↳ 2. IPS - VoiceCheck 
+	↳ 2.1 Frontend 
+		↳ 2.1.1 Framework research
 
 I was given the **Proficient** rating.
+
 📄 **[Web Application in Practice](GP/LO1_WebApplication/WebApplication_InPractice.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
@@ -84,14 +101,17 @@ I was given the **Proficient** rating.
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.4 Requirements and design (LO6)
 
-<!-- TODO -->
+Requirements analysis and design are crucial components of the software development process, as they ensure that a software system meets the needs and expectations of its users. In this section, you will find documentation on how I applied these principles to my individual projects, CineMatch (current semester) and VoiceCheck (last semester), as well as to the group project of the last semester. I wrote a pitch and an analysis document for each of my individual projects, which helped me to identify and prioritize requirements and design a solution that met those requirements, while keeping my users (stakeholders) in mind. 
+
+The goal of this section is to demonstrate my proficiency in analysing requirements and software design.
 
 ### 2.4.1 This semester
 
-During this semester, I have been working on an extensive project analysis which contains a description of the project, three levels of the C4-model-based system architecture overview, user stories with acceptance criteria, and UI sketches.
+For CineMatch, I started with a pitch and created an extensive project analysis, which includes a description of the project, three levels of the C4-model-based system architecture overview, user stories with acceptance criteria, and UI sketches. The idea came together because of increasing demand for a buddy to go to the cinema with. 
 
-In addition, I have created a story map for the entire project in Jira. Click on the image below to see the full image.
+In addition, I have created a story map for the entire project in Jira. You can view the full image by clicking on it.
 
+📄 **[CineMatch Pitch](CineMatch/CineMatch_Pitch.md)**
 📄 **[CineMatch Project Analysis](CineMatch/Project_Analysis.md)**
 
 <img src="/Media/CineMatch-storymapping-board.png" alt="Story map - CineMatch" width="800">
@@ -99,12 +119,13 @@ In addition, I have created a story map for the entire project in Jira. Click on
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ### 2.4.2 Last semester
 
-Before it was decided that I would only focus on GPS, I came up with the idea for "VoiceCheck", for my individual project, which I wrote a pitch and an analysis document for. Originally, I had planned to develop this application with Vue.js for the frontend and C# for the backend.
+Before it was decided that I would only focus on GPS, I came up with the idea for "VoiceCheck" as my individual project, which I also wrote a pitch and an analysis document for. 
 
-Possibly accompanied by my work in the GPS project which I can't share here, I was given the **Proficient** rating.
+Accompanied by my work in the GPS project where I worked on - among other things - the entity relationship diagram, I was given the **Proficient** rating.
 
 📄 **[VoiceCheck Pitch](GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md)** 
 📄 **[VoiceCheck Project Analysis](GP/LO6_Requirements_and_design/IP_VoiceCheck_Analysis.pdf)**
+📄 **[GP Project Analysis](GP/LO6_Requirements_and_design/IsItLive_Project_Analysis.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.5 Professional (LO8)
