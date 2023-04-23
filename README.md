@@ -11,8 +11,8 @@ Version: 2.1
 
 | Version    | Sprint       | Changes                                 |
 |------------|--------------|-----------------------------------------|
-| 1.0        | 1            | 🔹 Uploaded all of the GP files, including the reader's guide, [here](GP/).
-| 2.0 | 2 | 🔹 Added the introduction chapter. <br> 🔹 Finished the entire GPS section. <br> 🔹 Started with the IPS section. 
+| 1.0        | 1            |🔹 Uploaded all of the GP files, including the reader's guide, [here](GP/).
+| 2.0 | 2 |🔹 Added the introduction chapter. <br>🔹 Finished the entire GPS section. <br>🔹 Started with the IPS section. 
 | 2.1 | 3 | 🆕 Added all relevant documents from last semester to the IPS section.
 
 
@@ -48,7 +48,7 @@ This document serves as the reader's guide to my portfolio items of
 S3-DB01 (Spring, 2023). For the reader's guide of the previous S3 semester (Fall, 2022) where I mainly focussed on the GPS, please click **[here](GP/ReadersGuidePortfolio_MauriceSchippers_v2_0.pdf)**.
 
 This portfolio is organized into two main sections: The IPS and the GPS section. 
-The first section is the IPS section, which contains all of the work I have completed during **this** semester. Each subsection includes a link to the created work, an explanation of how it relates to the learning outcomes (LOs), and notes on any overlapping information regarding LOs. Additionally, if relevant, a link to work from the previous semester is provided.
+The first section is the IPS section, which contains all of the work I have completed during **this** semester. Each subsection includes links to the created work, a description or an explanation of how it relates to the learning outcomes (LOs), and notes on any overlapping information regarding LOs. Additionally, if relevant, a link to work from the previous semester is provided.
 The second section is the GPS section, which contains all the LOs related to the GPS and the links to the work I did for them in the previous semester. For LO3 (Agile method), I did some additional work during this semester which is also added there.
 
 The final section includes my overall reflection on the semester. This section is divided into subsections, where I look back upon what went well, what could have gone better and decide on what my next steps will be.
@@ -65,7 +65,7 @@ During the **[analysis phase](#24-requirements-and-design-lo6)**, I focused on g
 
 ## 2.1 Web Application (LO1)
 
-This learning outcome covers the five key elements of developing a web application: **frontend, distributed communication, backend, data persistence, and user experience**. In both the current and last semester, I wrote a large document detailing how I applied the five elements of this learning outcome to my projects, including the group project of last semester. 
+This learning outcome covers the five key elements of developing a web application: **frontend, distributed communication, backend, data persistence, and user experience**. In both the current and last semester, I wrote a large document detailing how I applied these five elements to my projects, including the group project of last semester. 
 
 Furthermore, to make a well informed decision, I conducted a thorough comparison of the three most popular frontend frameworks during the last semester. The details of this research can be found in the following section **[2.1.2 Last Semester](#212-last-semester)**. 
 
@@ -81,7 +81,7 @@ Additionally, you can find the links to the repositories for the frontend and ba
 
 ### 2.1.2 Last semester
 
-During the last semester, I wrote a large document detailing how I addressed the five elements of this learning outcome in both the group project and my individual project. I'm very satisfied with how it came out. As a source of inspiration for the user experience part, I read the book 'Don't Make Me Think' by Steve Krug. This book was very helpful and inspired me a lot.
+I'm very satisfied with how the document from the last semester came out. It mainly covers my work in the group project. As a source of inspiration for the user experience part, I read the book 'Don't Make Me Think' by Steve Krug. This book was very helpful and inspired me a lot.
 
 At the beginning of that semester, I had little to no knowledge of JavaScript, which played a crucial role in my choice of frontend framework. So, I planned to develop this application with Vue.js for the frontend and C# for the backend. My research regarding the frameworks can be found under the following sections:
 ↳ 2. IPS - VoiceCheck 
@@ -111,8 +111,8 @@ For CineMatch, I started with a pitch and created an extensive project analysis,
 
 In addition, I have created a story map for the entire project in Jira. You can view the full image by clicking on it.
 
-📄 **[CineMatch Pitch](CineMatch/CineMatch_Pitch.md)**
-📄 **[CineMatch Project Analysis](CineMatch/Project_Analysis.md)**
+📄🗣️ **[CineMatch Pitch](CineMatch/CineMatch_Pitch.md)** |
+📄🔎 **[CineMatch Project Analysis](CineMatch/Project_Analysis.md)**
 
 <img src="/Media/CineMatch-storymapping-board.png" alt="Story map - CineMatch" width="800">
 
@@ -123,9 +123,9 @@ Before it was decided that I would only focus on GPS, I came up with the idea fo
 
 Accompanied by my work in the GPS project where I worked on - among other things - the entity relationship diagram, I was given the **Proficient** rating.
 
-📄 **[VoiceCheck Pitch](GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md)** 
-📄 **[VoiceCheck Project Analysis](GP/LO6_Requirements_and_design/IP_VoiceCheck_Analysis.pdf)**
-📄 **[GP Project Analysis](GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf)**
+📄🗣️ **[VoiceCheck Pitch](GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md)** | 
+📄🔎 **[VoiceCheck Project Analysis](GP/LO6_Requirements_and_design/IP_VoiceCheck_Analysis.pdf)** | 
+📄🔎 **[GP Project Analysis](GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.5 Professional (LO8)
