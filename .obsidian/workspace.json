@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 290.5
   },
   "right": {
     "id": "aa837241df24903a",
@@ -150,6 +150,8 @@
   },
   "active": "8d9229c4bb8f84d7",
   "lastOpenFiles": [
+    "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf",
+    "README.md",
     "GP/LO6_Requirements_and_design/~WRL3576.tmp",
     "GP/LO6_Requirements_and_design/~WRD3553.tmp",
     "GP/LO6_Requirements_and_design/~WRD0005.tmp",
@@ -159,10 +161,7 @@
     "GP/LO6_Requirements_and_design/~WRD0003.tmp",
     "GP/LO6_Requirements_and_design/~$ItLive_Project_Analysis.docx",
     "GP/LO6_Requirements_and_design/~WRL0002.tmp",
-    "GP/LO6_Requirements_and_design/~WRD0001.tmp",
-    "GP/LO6_Requirements_and_design/IsItLive_Project_Analysis.docx",
     "CineMatch/Project_Analysis.md",
-    "README.md",
     "CineMatch/WebApplication_InPractice.md",
     "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf.md",
     "CineMatch/CineMatch_Pitch.md",

@@ -125,7 +125,7 @@ Accompanied by my work in the GPS project where I worked on - among other things
 
 📄 **[VoiceCheck Pitch](GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md)** 
 📄 **[VoiceCheck Project Analysis](GP/LO6_Requirements_and_design/IP_VoiceCheck_Analysis.pdf)**
-📄 **[GP Project Analysis](GP/LO6_Requirements_and_design/IsItLive_Project_Analysis.pdf)**
+📄 **[GP Project Analysis](GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.5 Professional (LO8)
