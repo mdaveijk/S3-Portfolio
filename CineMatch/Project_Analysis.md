@@ -7,27 +7,27 @@
 ___
 |         |         |
 |:---------------:|:---------------:|
-|   Release:      |   4th of April 2023      |
-|   Version:          |   1.0          |
+|   Release:      |   28th of April 2023      |
+|   Version:          |   2.0          |
 |   Location:          |   Eindhoven          |
 |   Project owner:          |   Maurice Schippers          |
 ___
 
 
 ## Table of Contents
-1. [Project Description](#1-project-description)
-2. [System Architecture Overview](#2-system-architecture-overview)
-	1. [Components](21-cinematch-components)
-	2. [The C4-model](#22-the-c4-model)
-	3. [System Context](221-system-context-diagram)
-4. [User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
-	1. [Definition of Done](#31-definition-of-done)
-5. [User Interface Sketches](#4-user-interface-sketches)
-	1. [Homepage](#41-homepage)
-	2. [Schedule a visit](#42-schedule-a-visit)
-	3. [Schedule a visit - Possible matches](#43-schedule-a-visit---possible-matches)
-	4. [Movie meetup overview page](#44-movie-meetup-overview-page)
-6. [Test Methodologies](#5-test-methodologies)
+- [1. Project Description](#1-project-description)
+- [2. System Architecture Overview](#2-system-architecture-overview)
+	- [2.1 Components](21-cinematch-components)
+	- [2.2 The C4-model](#22-the-c4-model)
+		- [2.2.1 System Context](221-system-context-diagram)
+- [3. User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
+	- [3.1 Definition of Done](#31-definition-of-done)
+- [4. User Interface Sketches](#4-user-interface-sketches)
+	- [4.1 Homepage](#41-homepage-3-versions)
+	- [4.2 Preferences](42-preferences)
+	- [4.3 Matches overview](43-matches-overview)
+	- [4.4 Match browsing](44-match-browsing)
+- [5. Test Methodologies](#5-test-methodologies)
 
 ## 1. Project Description
 CineMatch is a software project that allows users to plan a visit or **movie meetup** to a certain movie, within a certain timeslot and location and let the software find a match with another user that has scheduled for a matching or similar movie (genre), timeslot or location. Once a match has been made, users can communicate through the application to decide on further details and leave a review about their overall experience afterwards. 
@@ -38,7 +38,7 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 
 ## 2. System Architecture Overview
 
-### 2.1 CineMatch components
+### 2.1 Components
 
 ### 2.2 The C4-model
 The C4-model depicts a visual representation of the architecture of CineMatch. Making it easier to understand and communicate for both technical and non-technical stakeholders.
@@ -61,7 +61,7 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 | US-01 | User | As a user, I want to match with another user based on my movie preferences and schedule so I don't have to be by myself in the theatre and meet new people. | M | <ul> <li>The user should be able to select one or more of the following criteria for matching: movie, movie genre, available time slot, date, and location.</li> <li> The user has to enter at least one matching criteria. </li> <li>The system should suggest matches with other users who have similar preferences and are available to see the movie at the same time and location.</li> <li>The user should be able to specify the maximum distance they are willing to travel to the cinema.</li> <li>The user should not be able to schedule a visit in the past.</li> <li> The user is allowed to cancel a movie meetup if they haven't been matched yet.</li> <li> The user can schedule multiple visits. </li> </ul>
 | US-02 | User | As a user, I want to be able to select a movie from a list of available movies after entering my preferred cinema so that it is much easier and faster to decide on what I want to watch. | M | <ul><li>The system should display a list of available movies for the selected cinema.</li> <li>The user should be able to select a movie from the list of available movies.</li><li> The system should prevent the user from selecting a movie is not available at the selected cinema.</li><li> The user should be able to view more information about a movie by clicking on it in the list, such as a synopsis or trailer. </li><li> The user should be able to see the rating or reviews for a movie in the list. </li></ul>
 | US-03 | User | As a user, I want to see an overview from all open movie meetups by other users so I can find a match by myself. | M | <ul><li>The system should display a list of all open movie meetups by other users.</li> <li>The list should include details such as the user who scheduled the meetup, the movie, date and time, and location of the meetup.</li><li>The system should not show meetups that already found a match or are already full.</li><li>The user should be able to click on a movie meetup to view more details about it.</li><li> The user should be able to apply for an open movie meetup scheduled by another user. </li><li>The system should remove movie meetups that have passed.</li></ul>
-| US-04 | Admin | As a website administrator, I want users to create an account to improve the security of the application and protect user data. | M | <ul><li>The system should display a registration form for users to create an account.</li><li>The registration form should require the user's full name, email address and a password.</li><li>The system should verify that the email address is unique and not already registered.</li><li>The system should encrypt and store the user's password securely.</li><li>The system should display an error message if the user enters an invalid email address or password.</li><li>The user should be able to log in to their account using their email address and password.</li></ul> |
+| US-04 | User | As a user, I want to be able to sign up using my social media accounts to save time and effort in creating a new account. | M | <ul><li>The login page should offer the option to sign up using one or more supported social media platforms.</li><li>The system should display a confirmation message indicating that the user has successfully signed up using their social media account.</li><li>The user should be able to access the platform using their social media credentials in the future, without needing to sign up or remember a separate set of login credentials.</li><li>The system should store the necessary user information obtained from the social media platform, such as their name and email address.</li><li>The user should be able to choose which information to share from their social media account, such as their profile picture or other basic details.</li><li>The system should verify that the user's social media account is valid and active before allowing them to sign up.</li><li>The system should handle errors gracefully, displaying helpful messages if the social media account is not recognized or there is a problem with the authentication process.</li></ul> |
 | US-05 | User | As a user, I want the ability to limit the number of times another user can apply for my movie meetup, so that I don't receive spam requests and can focus on finding the right match for my movie visit. | M |<ul><li>The system should restrict the amount of times another user can sign up for a certain movie meetup.</li><li>The system should prevent users from applying for a meetup once the limit has been reached.</li><li>The system should notify the user when a user's application for their movie meetup has been declined due to the limit being reached.</li><li>The system should keep track of the number of times another user has applied for a user's movie meetup and prevent them from applying once the limit has been reached.</li><li>The system should prevent a user from signing up for the same movie meetup more than once.</li><li>The system should display the number of remaining available spots for a movie meetup to other users.</li></ul>
 | US-06 | User | As a user, I want to decide whether a match works for me so I won't get matched with the same person every time. | S | <ul><li>The system should allow another user to apply for a match with the current user.</li><li>The current user should be able to accept or decline the match request.</li><li>If the current user declines a match request, the system should suggest a new user who is interested in a match.</li><li>The current user should be able to view the profile of the user who has applied for a match before accepting or declining.</li><li>The current user should be able to set preferences for the types of matches they want to receive.</li><li>The system should take into account the current user's match preferences when suggesting a new user.</li><li>The current user should be able to provide feedback on the match request to improve future matches.</li></ul>  |
 | US-07 | User | As a user, I want to know what movies are currently playing in theaters so that I can decide which movie to watch. | S | <ul><li>The system should provide users with the ability to report inaccuracies in the movie list and offer a feedback mechanism to improve data quality.</li><li>The system should display a list of movies based on the selected cinema.</li><li>The system should remove movies from the list if it is confirmed they are no longer playing in theaters.</li><li>The list should include details such as the movie title, genre, rating, and runtime.</li><li>The user should be able to click on a movie to view more details about it.</li></ul> |
@@ -83,43 +83,49 @@ _All Stories Sorted through the MoSCoW-method with the corresponding acceptance 
 7.  The Story has been reviewed and approved by the product owner or other relevant stakeholders, and any feedback has been incorporated into the final implementation.
 8.  Any relevant documentation (e.g. release notes, user guides, technical specifications) have been updated to reflect the changes made as part of the Story.
 
-<!-- 
-| 1 | User | Create an account | M | User is able to create a new account with a unique username and password. |
-| 2 | User | Log in and out | M | User is able to log in to their existing account and log out when they are finished. |
-| 3 | User | Search for movies and showtimes | M | User is able to search for movies and see their showtimes. |
-| 4 | User | Schedule a cinema visit | M | User is able to schedule a cinema visit by selecting a movie and showtime. |
-| 5 | User | Match with other users | M | User is matched with other users who have similar movie preferences, showtimes, and locations. |
-| 6 | User | Chat with match | S | User is able to chat with their match after a successful match. |
-| 7 | User | See movie and cinema reviews | S | User is able to see reviews of movies and cinema locations. |
-| 8 | User | Leave a review | S | User is able to leave a review after watching a movie. |
-| 9 | User | Keep a "to watch" list | S | User is able to keep a list of movies they want to watch. |
-| 10 | User | Follow another user | S | User is able to follow another user and see their activity. |
-| 11 | User | Filter matches by criteria | S | User is able to filter their matches by certain criteria, such as age or gender. |
-| 12 | User | User-friendly application | M | The application is easy to navigate and use. |
-| 13 | User | Responsive application | M | The application works well on both desktop and mobile devices. |
-| 14 | System | Fast response time | M | The application has a fast response time and minimal downtime. |
-| 15 | System | Secure user data | M | The application is secure and protects user data. | -->
-
 
 
 ## 4. User Interface Sketches
-Below are four wireframes to give an idea of the main design of CineMatch. The inspiration for these designs came from other cinema-based websites found on dribbble. The first sketches were done on paper and later converted to images using the application Figma. The primary goal was to ensure the features were clear and concise, with easy access to frequently used functions (such as the upper right buttons and left menu), while allowing enough space to avoid clutter and enhance the user experience.
 
-### 4.1 Homepage
-<img src="/Media/Homepage.png" alt="Homepage of CineMatch" width="800">
-The homepage features a number of elements to provide an easy, yet not too busy interface. On the left of the page, there is a block that features a small menu, a section that features the name of friends made through matches displayed in a vertical order and a log out button. This block will be available on every page. The same goes for the top bar that features a CTA button to organise a movie meetup and two buttons for notifications and to access their personal account. Unique to the page are the main content area that will feature a welcome message and tell the user basic information about CineMatch. Additionally, a sign up button is shown in case the user does not have an account yet. Finally, the page has a list of the (upcoming) meetups that the user is part of. 
+The following four wireframes are an initial representation of CineMatch's design. For a more complete picture, please see the prototype present in the **[Web Application in Practice](WebApplication_InPractice.md#6-user-experience)** document, which includes high-fidelity screens and more detailed information.
 
-### 4.2 Schedule a visit
-<img src="/Media/ScheduleAVisit.png" alt="Scheduling a visit - CineMatch" width="800">
-This is the view the user sees when they click the "Let's go to the movies" CTA button. Here, they can submit their preferences when looking for a match, such as their preferred movie, movie genre, location, and more. Once they have selected a movie, a thumbnail of the movie will show up next to the form. If no movie has been selected yet, the thumbnail area will remain empty. To make it easier for the user, there are two lists available: one that displays the movies currently showing (if the user has selected a cinema), and one that shows upcoming movies that are not yet showing anywhere.
+When I started the project, I spent time considering the user flow and created these wireframes accordingly to explore different design options and refine the user experience. I drew inspiration for these designs from other cinema-based and dating websites found on dribbble. The first sketches were done on paper and later converted to images using the application Figma. The primary goal was to ensure the features were clear and concise, with easy access to frequently used functions (such as the left menu), while allowing enough space to avoid clutter and enhance the user experience.
 
-### 4.3 Schedule a visit - Possible matches
-<img src="/Media/ScheduleAVisitPossibleMatches.png" alt="Scheduling a visit with possible matches - CineMatch" width="800">
-This is the view that the user sees after submitting the form to schedule a visit. The system displays any possible matches based on the user's preferences. Each match shows the avatar of the matched user, their name, the matching information (for example, preferred movie, movie genre, location), and the preferred date and time slot. The matching information will be shown in bold text to help the user quickly identify key details. If the user is interested in a suggested match, they can connect with the user by selecting the "Confirm match" button.
+### 4.1 Homepage (3 versions)
 
-### 4.4 Movie meetup overview page
-<img src="/Media/MovieMeetupOverview.png" alt="Overview of all open movie meetups - CineMatch" width="800">
-This view displays a complete overview of all currently available movie meetups that the user can choose from. Each meetup shows the avatar of the organiser, their name, and the details of the meetup, which could be the movie, a genre, location or a preferred date and time. It also shows the current status of the meetup, such as whether it's open to join or already full. If the active user is interested in the meetup, they can connect with the organiser by selecting the "Show interest" button.
+To choose the best design for the homepage, I conducted a survey on social media for homepage designs found on dribbble. Also more about that process in the **[Web Application in Practice](WebApplication_InPractice.md#6-user-experience)** document. I made a top three out of these choices.
+
+The first two designs both received six votes. The third version can be seen as a combination of the other two, but it was initially inspired by a different design I had come across.
+
+1. Design 1: <img src="/Media/Homepage_version1.png" alt="Homepage of CineMatch, version 1" width="800">
+	1. Participants liked the clear view of this design, which uses a three-column layout to make it easy to focus on the most important elements. The first column features a minimalist menu with labels that are turned 90 degrees, giving it a unique and modern look. Despite the unusual orientation, users appreciated that it didn't take up too much space on the page. The third column of the design features the media, which could include a large image of a movie poster or something cinema related to grab the user's attention. This visual element helps users quickly understand what the service is about and what they can expect to see. Overall, the design strikes a balance between simplicity, a modern look and functionality, making it easy to use while still providing all the necessary information. The results of the survey suggest that end-users are open to different design approaches and are willing to embrace new ideas.
+
+2. Design 2: <img src="/Media/Homepage_version_2.png" alt="Homepage of CineMatch, version 2" width="800">
+	1. Participants liked this design because of the aesthetic and its amount of space. In addition, I've received comments about it looking more trustworthy. The design that inspired this version had two drawings next to the "Get Started" button. No clutter and very inviting towards the audience. Users expressed a desire for a visually appealing background that would create a welcoming and comfortable atmosphere on the website, particularly around the central button, as this is where their focus lies. It's worth noting that this design was favored by participants with an artistic background, perhaps indicating a preference for aesthetics and visual appeal.
+
+3. Design 3 (3 votes): <img src="/Media/Homepage_version_3.png" alt="Homepage of CineMatch, combination of the other two" width="800">
+	1. Participants also liked the clear view of this design. The two-column design made it easy on what to focus on, accompanied by the classic top menu. It didn't overly complicate things, which is one of the main things to keep in mind when it comes to user experience. Interestingly, the third design appears to be a blend of the other two, featuring the top menu from design 2 and the media placement on the right from the first design.
+
+### 4.2 Preferences
+The preferences screen allows users to set their movie and genre preferences, as well as date, timeslot, maximum travel distance, and location. By providing this information, the system can better match users with compatible movie buddies based on their interests and schedules.
+
+In the future, we plan to add an additional field where users can select their preferred cinema based on their location. Once a movie is selected, a thumbnail of the movie will appear next to the form. If no movie has been selected yet, the thumbnail area will remain empty. To make it easier for users, there are two lists available: one that displays currently showing movies (if a cinema has been selected), and one that shows upcoming movies that are not yet showing anywhere.
+
+Overall, the preferences screen provides users with the ability to tailor their matches to their schedule and movie interests, increasing the chances of finding a compatible movie buddy.
+
+
+<img src="/Media/Preferences_screen.png" alt="Setting preferences screen" width="800">
+
+### 4.3 Matches overview
+After logging in, users will be presented with a selection of potential matches, allowing them to quickly find a match and simplify the process. The idea is to show the poster of a selected movie or something representing a genre, alongside the other user's name. The active user can then read more about one of the other users by clicking on their respective card. 
+
+<img src="/Media/Matching_screen.png" alt="Homepage of CineMatch after logging in, showing potential matches" width="800">
+
+### 4.4 Match browsing
+After selecting the CTA button "Find a Match", users will see this screen. It has yet to be decided whether multiple cards will be visible at the same time or just one, and how much information will be shown. However, the other user's name, profile picture, and movie or genre selection will be definitely be displayed, along with a button for the active user to show interest in the other user.
+
+<img src="/Media/Match_browsing_v1_1.png" alt="Browsing through matches" width="800">
+
 
 ## 5. Test Methodologies
 In addition to the project analysis outlining the design choices and requirements of our software application, there is a separate document that covers our test methodologies. This document details the various testing approaches we are utilizing throughout the software development lifecycle, including unit testing, integration testing, system testing, and acceptance testing. It also describes the specific tools and frameworks we are using to automate our testing processes and ensure the quality and reliability of our software product. By following these rigorous testing procedures, we hope to deliver a high-performing, bug-free application that meets the needs and expectations of our stakeholders.

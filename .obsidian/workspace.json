@@ -20,8 +20,33 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "202df2529296208d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CineMatch/Project_Analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0679fb1c44e4eeeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CineMatch/WebApplication_InPractice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "CineMatch/Project_Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "CineMatch/Project_Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "CineMatch/Project_Analysis.md"
               }
             }
           }
@@ -148,10 +173,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d9229c4bb8f84d7",
+  "active": "202df2529296208d",
   "lastOpenFiles": [
-    "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf",
+    "CineMatch/WebApplication_InPractice.md",
+    "CineMatch/Project_Analysis.md",
     "README.md",
+    "Media/Preferences_screen.png",
+    "Media/Matching_screen.png",
+    "Media/Match_browsing_v1.png",
+    "Media/Match_browsing.png",
+    "Media/Homepage_version_3.png",
+    "Media/Homepage_version_2.png",
+    "Media/Homepage_version_1.png",
+    "Media/Match browsing_v1_1.png",
+    "Match browsing_v1_1.png",
+    "Media/Homepage - version 1.png",
+    "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf",
     "GP/LO6_Requirements_and_design/~WRL3576.tmp",
     "GP/LO6_Requirements_and_design/~WRD3553.tmp",
     "GP/LO6_Requirements_and_design/~WRD0005.tmp",
@@ -161,23 +198,11 @@
     "GP/LO6_Requirements_and_design/~WRD0003.tmp",
     "GP/LO6_Requirements_and_design/~$ItLive_Project_Analysis.docx",
     "GP/LO6_Requirements_and_design/~WRL0002.tmp",
-    "CineMatch/Project_Analysis.md",
-    "CineMatch/WebApplication_InPractice.md",
     "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf.md",
     "CineMatch/CineMatch_Pitch.md",
     "GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md",
-    "Media/cinematchlogo.png",
-    "Media/SystemContext_CineMatch.png",
-    "Media/ScheduleAVisitPossibleMatches.png",
-    "Media/ScheduleAVisit.png",
-    "Media/MovieMeetupOverview.png",
-    "Media/Homepage.png",
-    "Media/CineMatch-storymapping-board.png",
-    "CineMatch-storymapping-board.png",
     "23-cicd-lo4.md",
     "2.2 System Context Diagram.md",
-    "Homepage.png",
-    "Media/Schedule a visit.png",
     "CineMatch/Project Analysis 1.md"
   ]
 }
