@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "202df2529296208d",
+            "id": "61f9cb23c4150df8",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "CineMatch/Project_Analysis.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -45,8 +47,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CineMatch/Project_Analysis.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CineMatch/Project_Analysis.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CineMatch/Project_Analysis.md"
+                "file": "README.md"
               }
             }
           }
@@ -173,21 +174,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "202df2529296208d",
+  "active": "8d9229c4bb8f84d7",
   "lastOpenFiles": [
-    "CineMatch/WebApplication_InPractice.md",
     "CineMatch/Project_Analysis.md",
     "README.md",
+    "CineMatch/WebApplication_InPractice.md",
+    "Research/Security_Research_Authentication_Authorization.md",
+    "Research",
+    "SystemContext_CineMatch.png",
+    "Media/SystemContext_CineMatch_v1.png",
+    "Media/ContainerDiagram_CineMatch_v1.png",
+    "SystemContext_CineMatch_v1.png",
+    "ContainerDiagram_CineMatch_v1.png",
     "Media/Preferences_screen.png",
     "Media/Matching_screen.png",
     "Media/Match_browsing_v1.png",
     "Media/Match_browsing.png",
     "Media/Homepage_version_3.png",
-    "Media/Homepage_version_2.png",
-    "Media/Homepage_version_1.png",
-    "Media/Match browsing_v1_1.png",
-    "Match browsing_v1_1.png",
-    "Media/Homepage - version 1.png",
     "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf",
     "GP/LO6_Requirements_and_design/~WRL3576.tmp",
     "GP/LO6_Requirements_and_design/~WRD3553.tmp",
@@ -197,7 +200,6 @@
     "GP/LO6_Requirements_and_design/~WRL0004.tmp",
     "GP/LO6_Requirements_and_design/~WRD0003.tmp",
     "GP/LO6_Requirements_and_design/~$ItLive_Project_Analysis.docx",
-    "GP/LO6_Requirements_and_design/~WRL0002.tmp",
     "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf.md",
     "CineMatch/CineMatch_Pitch.md",
     "GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md",

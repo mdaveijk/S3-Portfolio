@@ -133,6 +133,8 @@ Accompanied by my work in the GPS project where I worked on - among other things
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.6 Security research on authentication/authorization
 
+[**Security Research**](/Research/Security_Research_Authentication_Authorization.md)
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.7 Research on concurrency
 
