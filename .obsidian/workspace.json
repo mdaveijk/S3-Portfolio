@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "17cac9940b9c299e",
+        "id": "ea42560be05f2989",
         "type": "tabs",
         "children": [
           {
-            "id": "8d9229c4bb8f84d7",
+            "id": "c2abb284a7023b77",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Research/Security_Research_Identification_and_Authentication_Failures.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,26 +22,38 @@
             }
           },
           {
-            "id": "61f9cb23c4150df8",
+            "id": "7896fa39a521e4ec",
             "type": "leaf",
             "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CineMatch/Project_Analysis.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "0679fb1c44e4eeeb",
-            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "CineMatch/WebApplication_InPractice.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d9bf0e163d54dbf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CineMatch/WIP_InPractice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3616b266987b5b89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CineMatch/Quality_Plan.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,12 +104,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "59d771b8e64d627d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 286.5
   },
   "right": {
     "id": "aa837241df24903a",
@@ -113,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Research/Security_Research_Identification_and_Authentication_Failures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Research/Security_Research_Identification_and_Authentication_Failures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Research/Security_Research_Identification_and_Authentication_Failures.md"
               }
             }
           }
@@ -174,34 +194,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d9229c4bb8f84d7",
+  "active": "c2abb284a7023b77",
   "lastOpenFiles": [
-    "CineMatch/Project_Analysis.md",
-    "README.md",
+    "Media/session_management_keycloak.png",
+    "Media/bad_credentials_keycloak.png",
+    "Media/enable_and_configure_brute_force_prevention_keycloak.png",
+    "Media/configure_password_policies_keycloak.png",
+    "Media/http_response_burp_suite.png",
+    "Media/credential_stuffing_burp_suite.png",
+    "Media/configuring_security_defenses_keycloak.png",
+    "Media/Pasted image 20230614234503.png",
+    "CineMatch/Quality_Plan.md",
+    "Research/Security_Research_Identification_and_Authentication_Failures.md",
     "CineMatch/WebApplication_InPractice.md",
-    "Research/Security_Research_Authentication_Authorization.md",
+    "CineMatch/WIP_InPractice.md",
+    "CineMatch/Project_Analysis.md",
+    "Media/api-documentation.png",
+    "CineMatch/CineMatch_Pitch.md",
+    "Media/dependabot_alerts.png",
+    "Miscellaneous/CineMatch_Ethics.md",
+    "Miscellaneous/Agile_Journey.md",
+    "Research/Concurrency_Research.md",
+    "README.md",
+    "Media/password_requirements_nng.png",
+    "Media/password_requirements_nng.png.crdownload",
+    "2. Understanding Identification and Authentication in (Distributed) Web Applications 1.md",
+    "2. Understanding Identification and Authentication in (Distributed) Web Applications.md",
+    "Untitled.md",
+    "Miscellaneous",
+    "Research/Untitled",
+    "Research/Clean_Code.md",
     "Research",
-    "SystemContext_CineMatch.png",
-    "Media/SystemContext_CineMatch_v1.png",
-    "Media/ContainerDiagram_CineMatch_v1.png",
-    "SystemContext_CineMatch_v1.png",
-    "ContainerDiagram_CineMatch_v1.png",
-    "Media/Preferences_screen.png",
-    "Media/Matching_screen.png",
-    "Media/Match_browsing_v1.png",
-    "Media/Match_browsing.png",
-    "Media/Homepage_version_3.png",
     "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf",
     "GP/LO6_Requirements_and_design/~WRL3576.tmp",
     "GP/LO6_Requirements_and_design/~WRD3553.tmp",
     "GP/LO6_Requirements_and_design/~WRD0005.tmp",
     "GP/LO6_Requirements_and_design/IsItLive_Project_Analysis.pdf",
     "GP/LO6_Requirements_and_design/mso54E2.tmp",
-    "GP/LO6_Requirements_and_design/~WRL0004.tmp",
-    "GP/LO6_Requirements_and_design/~WRD0003.tmp",
-    "GP/LO6_Requirements_and_design/~$ItLive_Project_Analysis.docx",
     "GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf.md",
-    "CineMatch/CineMatch_Pitch.md",
     "GP/LO6_Requirements_and_design/VoiceCheck_Pitch.md",
     "23-cicd-lo4.md",
     "2.2 System Context Diagram.md",
