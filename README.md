@@ -3,11 +3,11 @@
 Author: Maurice Schippers  <br> 
 Class: Software - S3-DB01 – Eindhoven<br> 
 Course: S-DB-IPS  & S-DB-GPS <br> 
-Coach: Jean-Paul Ligthart <br> 
-Date published: 23 April 2023<br> 
+Coach: Jean-Paul Ligthart & Marc van Grootel <br> 
+Date published: 15 June 2023<br> 
 Version: 3.0
 
-
+<!-- TODO update table of contents -->
 
 ## Table of Contents
 - [1. Introduction](#1-introduction)
@@ -87,12 +87,58 @@ I was given the **Proficient** rating.
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.2 Software quality (LO2)
 
-- Quality Plan
-- Security research
-- Clean code research
+The quality plan is a central document where all tests are documented to keep things readable.
+
+### 2.2.1 Quality plan
+This document contains all the testing I have done for CineMatch. Including the ones discussed in the researches.
+
+### 2.2.2 Research on identification and authentication failures
+
+I conducted an extensive research on the OWASP issue of identification and authentication failures. The research report covers the following subjects:
+
+- a description of the subject through a real-life example;
+- techniques and strategies for finding and preventing identification and authentication failures;
+- a possible solution to mitigate these failures;
+- testing the implemented solution to evaluate its effectiveness.
+
+Based on the result of this research, I implemented Keycloak as a Single Sign-On service in CineMatch. This addition serves as an extra layer of security, further boosting the overall security of the application.
+
+Read more about it here: [**Security Research**](Research/Security_Research_Identification_and_Authentication_Failures.md) 🕵🏻
+
+### 2.2.3 Research on concurrency
+
+<!-- TODO -->
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.3 CI/CD (LO4)
+
+<!-- TODO add some images to this section -->
+
+I set up a CI pipeline using GitHub Actions for both the frontend and the backend. The pipeline consists of two stages: "Build" and "Publish". They both slightly differ but the stages work similar to each other.
+
+### 2.3.1 Frontend
+
+For the frontend React application, a separate CI/CD pipeline was set up using GitHub Actions. This pipeline also consists of two stages: "Build" and "Publish".
+
+In the "Build" stage, the code is checked out, Node.js version 16 is set up, and Node dependencies are installed. The source code is then built using npm and tested.
+
+In the "Publish" stage, the repository is checked out, Docker buildx is set up, and Docker login is performed for the specified Docker registry (excluding pull requests). Docker image metadata is extracted, and the Docker image is built and pushed to DockerHub.
+
+### 2.3.2 Backend
+
+In the backend "Build" stage, the code is checked out, JDK 17 is set up, and Maven dependencies are cached. The application is then built and analyzed using Maven. Unit tests are executed, and SonarCloud is used to scan for code smells, bugs, and vulnerabilities. The build artifacts are also uploaded as artifacts. This step is needed in order for the next stage to work.
+
+In the "Publish" stage, the repository is checked out, and the previously built artifacts are downloaded. Docker login is performed for the specified Docker registry. Docker image metadata is extracted, and the Docker image is built and pushed to DockerHub.
+
+These CI/CD pipelines enable the automated building, testing, and continuous deployment of both the frontend and the backend services.
+
+Although I successfully configured Keycloak for authentication and authorization in my application, integrating it into the CI-pipeline proved very difficult and time-consuming. I found out that it is possible to test Keycloak in the CI-pipeline using Testcontainers, but I did not have the opportunity to try and implement it due to time constraints.
+
+
+Checkout the workflow files here:
+
+🌐🔄 **[Workflow frontend](https://github.com/mdaveijk/S3-IP-CineMatch-Frontend/blob/main/.github/workflows/main.yml)** | ⚙️🔄 **[Workflow backend](https://github.com/mdaveijk/S3-IP-CineMatch/blob/main/.github/workflows/maven.yml)**
+
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.4 Requirements and design (LO6)
@@ -124,17 +170,7 @@ Accompanied by my work in the GPS project where I worked on - among other things
 📄🔎 **[GP Project Analysis](GP/LO6_Requirements_and_design/GP_Project_Analysis.pdf)**
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
-## 2.5 Professional (LO8)
 
-**[⬆️ Back to Table of Contents](#table-of-contents)**
-## 2.6 Security research on authentication/authorization
-
-[**Security Research**](Research/Security_Research_Identification_and_Authentication_Failures.md)
-
-**[⬆️ Back to Table of Contents](#table-of-contents)**
-## 2.7 Research on concurrency
-
-**[⬆️ Back to Table of Contents](#table-of-contents)**
 # 3. GPS
 
 The following sections contain all the work I did in the previous semester for the (mainly) GPS learning outcomes.
@@ -167,8 +203,15 @@ During the previous semester, I conducted a process analysis of the group projec
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 4. Reflection
+
 ## 4.1 What went well
+
+<!-- I learned a lot of new things. Worked with several new technologies and programs.  -->
+
 ## 4.2 What could have gone better
+
+<!-- TODO Analysis Paralysis -->
+
 ## 4.3 Next steps
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 
