@@ -73,10 +73,10 @@ Despite the awareness and knowledge about these vulnerabilities, incidents such 
 - **Not securing everything**: The data leak at HAN University, where attackers exploited a webform to gain unauthorized access to sensitive information (NOS, 2021). This incident highlights the importance of properly securing web elements and conducting regular vulnerability tests to prevent such breaches. It serves as a reminder that even seemingly overlooked aspects can lead to significant security breaches.
 - **User behaviour**: Another factor contributing to authentication problems is user behaviour. Research shows that many users tend to postpone or underestimate the need for additional security measures like two-factor authentication, relying solely on strong passwords (Ng, 2018). After all, the effectiveness of these measures ultimately relies on user adoption and cooperation.
 - **Dependencies on third-party libraries**: Even with strong security measures in place, an application can remain vulnerable if it relies on third-party libraries with security issues. An example of this is these alerts I received for my GitHub frontend-project which makes use of Materialize (a design library). According to GitHub's "Dependabot", which scans for security issues, the version of Materialize that my frontend project uses is vulnerable to Cross-Site Scripting. This example shows the importance of maintaining and updating all dependencies on your application to ensure a secure software ecosystem.
-<div style="text-align: center;">
-  <img src="/Media/dependabot_alerts.png" alt="An example of third-party library security issues, retrieved from GitHub." width="800">
-  <p style="font-style: italic" > An example of third-party security issues, retrieved from GitHub </p>
-</div>
+
+  <img src="/Media/dependabot_alerts.png" alt="An example of third-party library security issues, retrieved from GitHub." width="800"> <br>
+  *An example of third-party security issues, retrieved from GitHub* 
+
 - **Reusing credentials:** Many users tend to reuse the same email address and password combination across multiple applications. This practice poses a significant risk as attackers can exploit email addresses obtained from data breaches for credential stuffing attacks. The website 'Have I Been Pwned?'[^1] is a service that allows users to check if their email addresses have been part of a data breach. Once an email address is obtained, attackers are left with the task of guessing the associated password, making brute force attacks much more likely to succeed.
 
 These examples show that authentication failures are influenced by a combination of technical, human, and environmental factors. 
@@ -104,10 +104,8 @@ By adding these lines, the container will be run using the 'docker' user, provid
 3. **Implement weak password checks**: Include weak password checks in the application, such as testing new or changed passwords against a list of the top 10,000 worst passwords. There are several sources to use for this strategy, such as the "SecLists" repository on GitHub[^2], with exactly 10,000 passwords, or the rockyou.txt file[^3], where the latter originated from an actual data breach back in 2009 and contains over a million of passwords. 
 
 4. **Align password policies with best practices**: Follow password length, complexity, and rotation policies that align with established guidelines, such as the National Institute of Standards and Technology (NIST) 800-63b's recommendations for Memorized Secrets. These guidelines are official documents that provide detailed instructions on how to handle passwords securely. An example of password requirements that follow these best practices can be seen below:
-<div style="text-align: center;">
-  <img src="/Media/password_requirements_nng.png" alt="An example of a form with password requirements that align with industry standards. Retrieved from the Nielsen Norman Group." width="800">
-  <p style="font-style: italic"> An example of a form with password requirements that align with industry standards. Retrieved from the Nielsen Norman Group. </p>
-</div>
+  <img src="/Media/password_requirements_nng.png" alt="An example of a form with password requirements that align with industry standards. Retrieved from the Nielsen Norman Group." width="800"> <br>
+  *An example of a form with password requirements that align with industry standards. Retrieved from the Nielsen Norman Group.*
 
 5. **Harden registration, credential recovery, and API pathways**: It is essential to strengthen the security of registration, credential recovery, and API pathways to mitigate the risk of account enumeration attacks and prevent information leakage. What this basically boils down to is that by refraining from providing specific error messages like "email address does not exist" or "the password is wrong", you prevent attackers from gaining insights into the validity of certain credentials. Even though this may cause some inconvenience to well-intentioned users, it is important to make it as hard as possible for attackers by holding back such information.
 
@@ -178,17 +176,13 @@ In this section, I will perform a credential stuffing attack using the Burp Suit
 
 Using the recommended Burp Suite tool in section [4. What can we do to prevent identification and authentication failures?](#4-what-can-we-do-to-prevent-identification-and-authentication-failures), I will simulate a credential stuffing attack against my application[^6]. This test aims to assess the resilience of Keycloak in detecting and mitigating such attacks. By using a small list of credentials, I will attempt to get unauthorized access to user accounts and show the effectiveness of Keycloak's protection mechanisms, including using one actual working combination of username and password. 
 
-<div style="text-align: center;">
-  <img src="/Media/credential_stuffing_burp_suite.png" alt="Simulation of a credential stuffing attack, through Burp Suite." width="800">
-  <p style="font-style: italic"> Simulation of a credential stuffing attack, through Burp Suite.</p>
-</div>
+  <img src="/Media/credential_stuffing_burp_suite.png" alt="Simulation of a credential stuffing attack, through Burp Suite." width="800"> <br>
+ *Simulation of a credential stuffing attack, through Burp Suite.*
 
 In this screenshot, a couple of things are going on. At the bottom, there is an intercepted and modified HTTP request header sent to CineMatch by Burp Suite. Burp Suite contains a lot of functionalities, including request interception. The top section shows two payload lists being tested: one representing an email (used for login) and a password. The only combination that exists within Keycloak is `maurice@fontys.nl` with the password `fontys`. However, as indicated by the 302 "Found" response, which is a redirecting response, Keycloak handles the credential stuffing attack by redirecting the user to the login page. This behaviour is consistent for all the requests, suggesting that Keycloak has a built-in mechanism to handle brute force attacks in this manner. The HTTP response gathered from this attack contains a lot of interesting elements on how Keycloak implemented security measures, as we can see from this screenshot:
 
-<div style="text-align: center;">
-  <img src="/Media/http_response_burp_suite.png" alt="HTTP response to the correct login attempt, following a credential stuffing attack." width="800">
-  <p style="font-style: italic"> HTTP response to the correct login attempt, following a credential stuffing attack.</p>
-</div>
+  <img src="/Media/http_response_burp_suite.png" alt="HTTP response to the correct login attempt, following a credential stuffing attack." width="800"> <br>
+  *HTTP response to the correct login attempt, following a credential stuffing attack.* 
 
 A summary of what we're seeing and why they help:
 
@@ -211,14 +205,12 @@ A summary of what we're seeing and why they help:
 
 By including these headers in the response, Keycloak shows how it deals with credential stuffing attacks. Each header handles a different, specific attack and provides defences at various stages of the request-response cycle. It is also possible to change the configuration of how it should deal with such requests within Keycloak:
 
-<div style="text-align: center;">
-  <img src="/Media/configuring_security_defenses_keycloak.png" alt="Header configuration within Keycloak." width="800">
-  <p style="font-style: italic">Header configuration within Keycloak.</p>
-</div>
+  <img src="/Media/configuring_security_defenses_keycloak.png" alt="Header configuration within Keycloak." width="800"> <br>
+  *Header configuration within Keycloak.*
 
 When a real user enters a username and password that do not match or do not exist, Keycloak's response makes sure that sensitive information is not exposed. The screenshot below shows the response a user receives in such cases:
 
-<div style="text-align: center;"> <img src="/Media/bad_credentials_keycloak.png" alt="Screenshot of Keycloak's response to bad credentials without exposing sensitive information." width="800"> <p style="font-style: italic">Screenshot of Keycloak's response to bad credentials without exposing sensitive information.</p> </div>
+<img src="/Media/bad_credentials_keycloak.png" alt="Screenshot of Keycloak's response to bad credentials without exposing sensitive information." width="800"> <br> *Screenshot of Keycloak's response to bad credentials without exposing sensitive information.*
 
 By providing a generic error message without specifying the exact reason for the authentication failure, Keycloak helps prevent potential attackers from gathering information about valid usernames or existing accounts. This approach covers one of the mentioned strategies in the previous section, [4. What can we do to prevent identification and authentication failures?](#4-what-can-we-do-to-prevent-identification-and-authentication-failures), which discusses the importance of not sharing any sensitive information in error messages. 
 
@@ -230,20 +222,18 @@ In order to tackle other common identification and authentication failures, it i
 - CAPTCHA Integration: Keycloak supports the integration of CAPTCHA during the registration process[^7]. Specifically, it supports the integration of "ReCAPTCHA": a CAPTCHA system developed by Google. Using this helps prevent abuse by bots and unauthorized account creation.
 
 - Enforcing Strict Password Policies: Weak passwords can be mitigated through setting up password policies. Keycloak offers various options that can be easily added to the registration system with a simple click.
-<div style="text-align: center;">
-  <img src="/Media/configure_password_policies_keycloak.png" alt="Options for password policies in Keycloak." width="800">
-  <p style="font-style: italic">Options for password policies in Keycloak.</p>
-</div>
+  <img src="/Media/configure_password_policies_keycloak.png" alt="Options for password policies in Keycloak." width="800"> <br>
+  *Options for password policies in Keycloak.*
 - Prevention of Brute-Force Attacks: Keycloak has a way to mitigate brute-force attacks by limiting the number of login attempts within a specific time frame. By enabling and customizing the brute force detection in the Realm Settings, you can protect user accounts from unauthorized access through repeated login attempts. Please note that this feature was not enabled during the credential stuffing attack performed earlier.
-    <div style="text-align: center;">
+
   <img src="/Media/enable_and_configure_brute_force_prevention_keycloak.png" alt="Configuration for setting up brute force with a lot of different possibilities." width="800">
-  <p style="font-style: italic">Configuration for setting up brute force with a lot of different possibilities.</p>
-</div>
+  <br>
+*Configuration for setting up brute force with a lot of different possibilities.*
+  
 - Secure Session Management: Keycloak has a lot of options for session management. You can easily monitor active users, their associated clients, login timestamps, and IP addresses. You can also log out users from their sessions:
-<div style="text-align: center;">
-  <img src="/Media/session_management_keycloak.png" alt="Session management in Keycloak." width="800">
-  <p style="font-style: italic">Session management in Keycloak.</p>
-</div>
+
+  <img src="/Media/session_management_keycloak.png" alt="Session management in Keycloak." width="800"> <br>
+*Session management in Keycloak.*
 
 ---
 [^6]: Learn more about credential stuffing attacks and Burp Suite here: [Credential stuffing with Burp Suite](https://portswigger.net/burp/documentation/desktop/testing-workflow/authentication-mechanisms/credential-stuffing)

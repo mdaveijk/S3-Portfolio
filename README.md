@@ -5,15 +5,7 @@ Class: Software - S3-DB01 – Eindhoven<br>
 Course: S-DB-IPS  & S-DB-GPS <br> 
 Coach: Jean-Paul Ligthart <br> 
 Date published: 23 April 2023<br> 
-Version: 2.1
-
-
-
-| Version    | Sprint       | Changes                                 |
-|------------|--------------|-----------------------------------------|
-| 1.0        | 1            |🔹 Uploaded all of the GP files, including the reader's guide, [here](GP/).
-| 2.0 | 2 |🔹 Added the introduction chapter. <br>🔹 Finished the entire GPS section. <br>🔹 Started with the IPS section. 
-| 2.1 | 3 | 🆕 Added all relevant documents from last semester to the IPS section.
+Version: 3.0
 
 
 
@@ -95,6 +87,10 @@ I was given the **Proficient** rating.
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.2 Software quality (LO2)
 
+- Quality Plan
+- Security research
+- Clean code research
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.3 CI/CD (LO4)
 
@@ -133,7 +129,7 @@ Accompanied by my work in the GPS project where I worked on - among other things
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.6 Security research on authentication/authorization
 
-[**Security Research**](/Research/Security_Research_Authentication_Authorization.md)
+[**Security Research**](Research/Security_Research_Identification_and_Authentication_Failures.md)
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.7 Research on concurrency
