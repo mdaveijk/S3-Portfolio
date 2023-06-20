@@ -3,8 +3,8 @@
 Author: Maurice Schippers  <br> 
 Class: Software - S3-DB01 – Eindhoven<br> 
 Course: S-DB-IPS  & S-DB-GPS <br> 
-Coach: Jean-Paul Ligthart & Marc van Grootel <br> 
-Date published: 15 June 2023<br> 
+Coaches: Jean-Paul Ligthart & Marc van Grootel <br> 
+Date published: 21 June 2023<br> 
 Version: 3.0
 
 <!-- TODO update table of contents -->
@@ -20,7 +20,6 @@ Version: 3.0
 	- [2.4 Requirements and design (LO6)](#24-requirements-and-design-lo6)
 		- [2.4.1 This semester](#241-this-semester)
 		- [2.4.2 Last semester](#242-last-semester)
-	- [2.5 Professional (LO8)](#25-professional-lo8)
 	- [2.6 Security research on authentication/authorization](#26-security-research-on-authenticationauthorization)
 	- [2.7 Research on concurrency](#27-research-on-concurrency)
 - [3. GPS](#3-gps)
@@ -186,7 +185,7 @@ The following sections contain all the work I did in the previous semester for t
 
 ## 3.1 Agile method (LO3)
 
-During this semester, I attended a webinar hosted by Mike Cohn on writing better user stories. More information about this experience can be found in the **[Additional Experience](#311-additional-experience)** section. I am using the Scrum approach for my current individual project.
+During this semester, I attended a webinar hosted by Mike Cohn on writing better user stories. A brief report of this experience can be found in the **[Additional Experience](#311-additional-experience)** section. I am using the Scrum approach for my current individual project.
 
 In the previous semester, I wrote two documents: a research paper on agile methodologies and a paper on how I applied it in the group project. I was given the **Advanced** rating. 
 
@@ -194,7 +193,13 @@ In the previous semester, I wrote two documents: a research paper on agile metho
 📄 **[Agile in Practice](GP/LO3_AgileMethod/AgileMethods_InPractice.pdf)**
 
 ### 3.1.1 Additional Experience
-<!-- TODO small review on webinar -->
+The webinar hosted by Mike Cohn on writing better user stories was very insightful and helped me a lot with managing my own project later in the semester. Some key takeaways from the webinar that I want to talk about are "**Potentially Shippable**" products and "**Splitting (stories) by interface**". 
+
+The concept of **Potentially Shippable** products talks about the importance of delivering high-quality, tested, and functional features that may not be fully connected with each other but are ready for deployment. This approach allows for incremental progress and ensures that valuable components are released sooner. Each iteration should bring something useful, not just documents. Stories are either *Done* or *Not Started*. This helped me hold onto a specific structure, limiting the amount of stories I would fit into one sprint and realistically deciding which stories were going to be done during a sprint.
+
+The technique of **Splitting by interface** was introduced as a way to demonstrate progress even if the final product is not immediately shippable. By dividing user stories based on interface components, such as delivering half-finished UI and half-finished database, development iterations can deliver functional portions of the system with value and allow for continuous improvement.
+
+These insights from the webinar have provided me with new perspectives and get agile back on track in my own project, because the client and I both could see immediate results when applying the **Splitting by interface** technique.
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 3.2 Cultural differences and ethics (LO5)
@@ -213,23 +218,28 @@ During the previous semester, I conducted a process analysis of the group projec
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 4. Reflection
 
-This section looks back on the entire semester and I talk about what I have learned from things that went well, didn't work out so well and what my next steps will be.
+In this section I look back on the entire semester and talk about what went well, didn't work out so well and what my next steps will be.
 
 ## 4.1 What went well
+This semester, my aim was to be a generalist, and I believe I have succeeded in doing so. I explored a lot of new things, such as writing my entire portfolio in Markdown language and creating a successful microservices architecture in Java with a NoSQL database. I felt like in order to be able to get out in the real world of software development, where everything is constantly changing, I have to adapt by learning new things, even if it's just scratching the surface of that subject. What I am most proud of, is that I picked up these new technologies surprisingly fast in a short time, such as learning Docker and setting up a CI/CD pipeline in just a few days.
 
-<!-- I learned a lot of new things. Worked with several new technologies and programs.  -->
+I have also spent less time on attempting to solve a problem than usual in comparison to last semester: I encountered a few complex technical problems during the semester, but unlike last semester when I would spend a week on trying to solve it, I moved on after trying for a day or two. This shift in mindset allowed me to make more time for other tasks and avoid getting stuck on one particular issue. This is a huge improvement for me because in the past I would not move on to other things until the problem at hand was completely fixed.
 
-This semester I aimed to be a generalist. And I feel like I succeeded at doing so. I wanted to expand my boundaries and try a lot of new things: (Java, React, MongoDB, Keycloak, Figma, Microservices, to name a few). I also spend less time on a problem than usual, which is a huge improvement for me because in the past I would not move on to other things unless the problem at hand was fixed.
 
 ## 4.2 What could have gone better
+I have the tendency to get overwhelmed easily (as stated in the previous reflection) and I was hoping to find ways to mitigate this during this semester. Unfortunately, this wasn't the case for the first 10 weeks of the semester: I spend a long time on the Requirements and design learning outcome, only to result (initially) in the wrong product. I was unable to make any decisions. I feel like a big cause of this is me not reaching out for feedback enough. But there's a problem: How do you know you need to ask certain questions when you're convinced you're on the right path? Only after conducting my first usability test I realised I was on the wrong path and wasn't making what the project stated at all. 
 
-<!-- TODO Analysis Paralysis -->
-I have the tendency to get overwhelmed easily (as stated in the previous reflection). I tried to find ways to mitigate this later on in the semester. Playing it safe instead of envisioning some big project; as creativity can be both a blessing and a curse. But how do you know you're stuck in a loop when you think you're taking the right path? This semester taught me that I'm sometimes scared of bringing the new things I learned into practice, which brings me back to the cycle of analysis paralysis, a term often heard in the world of software development. 
+In addition to that, I spend a long time postponing actually coding; hesitant to make a decision with a potentially bad outcome. There is actually a common term to describe both of these problems combined: *Analysis Paralysis*[^1]. This caused me to be demotivated as there were no results. Just like the client, we want to see results to stay motivated. This is when I noticed I wasn't working agile anymore, only working on the first phase of gathering requirements, which in reality is only a small portion of the development cycle. 
+
+I think having trouble with working agile was because I only worked on the individual part of the semester; working in groups caused me to focus on delivery and client satisfaction much more. I also found myself to be inspired by seeing the progress of other projects. This motivated me to work on my own project. I realized this especially that after every feedback moment with my coach, I felt the same: Discussions about software development proved to be a motivating factor for me, giving me new ideas and insights. This may have played an important factor during this semester.
 
 ## 4.3 Next steps
+During the rest of the semester, I found a few new ways to handle analysis paralysis in the future. The [**webinar on user stories**](#311-additional-experience) helped me find an agile way that I have adopted ever since to stay motivated, because it shows immediate results. In addition, I found a section about "Before the Project" in the book "The Pragmatic Programmer", which provides a lot of helpful tips to deal with a lot of the problems I struggled with, like the chapter about gathering requirements. I learned that delivering something that may not be perfect is always better than delivering nothing, and this realization will help me overcome hesitation when making decisions in the future. Instead of getting lost in thought, I will use feedback as my guide.
 
-The section about "Before the Project" in the book The Pragmatic Programmer helped me find a way to deal with a lot of the problems I struggled with. I learned that delivering something that doesn't suffice is always better than not to deliver something.
+I am also more in touch with other fellow developers from other semesters, which is another way that helps me stay motivated. I wrote down new ideas that I am going to work on soon, keeping the things I learned during this semester, both in theory and practically, in mind. In fact, I'm planning on forking my project and finish the project with the [**additional elements**](CineMatch/WebApplication_InPractice.md#411-future-plans) I planned on adding if I had more time, but instead using a Test-Driven Development approach[^2]. I realized that I started writing tests quite late into the project, so this is an area I will focus on improving.
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 
-
+---
+[^1]: See: [What is Analysis Paralysis?](https://asana.com/resources/analysis-paralysis) 
+[^2]: See: [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
