@@ -28,7 +28,7 @@ Unfortunately, we are all too familiar with the amount of data breaches reported
 So, this begs the question: **How can we effectively find and prevent identification and authentication failures in a distributed web application?** This is the main focus of this report, aiming to provide practical solutions and insights as an answer. Considering this is a very broad subject, this research will focus specifically on identification and authentication failures within the context of a distributed web application.
 
 In order to achieve this, I have used a number of DOT-framework methods to gather my information:
-1. Problem Analysis (Field)
+1. Root cause analysis (Workshop)
 2. Best, good and bad practices (Library)
 3. Available product analysis (Library)
 4. Prototyping (Workshop)

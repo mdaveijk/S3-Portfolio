@@ -53,7 +53,7 @@ Please note that bold and underlined text indicates a clickable link.
 
 In this section, I will discuss how I applied the IPS learning outcomes to the development of CineMatch. Upon taking a closer look, I realized that each outcome represents a part of the software development cycle, with **[Professional](#25-professional-lo8)** being a continuous process as developers are always busy with research and improving their skills and knowledge.
 
-During the **[analysis phase](#24-requirements-and-design-lo6)**, I focused on gathering requirements and designing the most suitable architecture for the project. In the **[building phase](#21-web-application-lo1)**, I used React, SpringBoot, and Hibernate as my tech stack of choice to develop the web application. For the **[testing phase](#22-software-quality-lo2)**, I focused on ensuring software quality through various testing techniques. Finally, in the **[release phase](#23-cicd-lo4)**, I plan to use Docker to implement a continuous integration and delivery to complete the software development cycle and release of CineMatch.
+During the **[analysis phase](#24-requirements-and-design-lo6)**, I focused on gathering requirements and designing the most suitable architecture for the project. In the **[building phase](#21-web-application-lo1)**, I used React, SpringBoot, and Hibernate as my tech stack of choice to develop the web application. For the **[testing phase](#22-software-quality-lo2)**, I setup a quality plan which contains various testing techniques. Finally, in the **[release phase](#23-cicd-lo4)**, I setup a CI-pipeline that builds and publishes Docker images to DockerHub, enabling continuous integration and delivery to complete the software development cycle and release of CineMatch.
 
 ## 2.1 Web Application (LO1)
 
@@ -63,11 +63,16 @@ Furthermore, to make a well informed decision, I conducted a thorough comparison
 
 ### 2.1.1 This semester
 
-The document for this semester, which can be found below, is still a work in progress. While the sections about **distributed communication** and **user experience** are yet to be completed, I have already chosen my tech stack for the development of CineMatch. I have decided to use React as my frontend framework, SpringBoot as my backend framework, and Hibernate as my ORM. The reasoning behind my choices can also be found in the document.
-
-Additionally, you can find the links to the repositories for the frontend and backend of CineMatch below.
+The reasoning behind my choices can also be found in the document. 
 
 📄 **[Full Stack Web Application - CineMatch](CineMatch/WebApplication_InPractice.md)** <br>
+Quick access to the five sections in the document: 
+- [**Frontend**](CineMatch/WebApplication_InPractice.md#2-frontend) 🌐
+- [**Distributed Communication**](CineMatch/WebApplication_InPractice.md#3-distributed-communication) 📡
+- [**Backend**](CineMatch/WebApplication_InPractice.md#4-backend)⚙️
+- [**Data Persistence**](CineMatch/WebApplication_InPractice.md#5-data-persistence) 🗄️
+- [**User Experience**](CineMatch/WebApplication_InPractice.md#6-user-experience) 🎨<br>
+The links to the repositories for the frontend and backend source code of CineMatch: <br>
 🌐 **[CineMatch frontend](https://github.com/mdaveijk/S3-IP-CineMatch-Frontend)** | ⚙️ **[CineMatch backend](https://github.com/mdaveijk/S3-IP-CineMatch)**
 
 
@@ -107,14 +112,15 @@ Read more about it here: [**Security Research**](Research/Security_Research_Iden
 
 ### 2.2.3 Research on concurrency
 
+Read more about it here: [**Concurrency Research**](Research/Concurrency_Research.md) 🕛
 <!-- TODO -->
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.3 CI/CD (LO4)
 
-<!-- TODO add some images to this section -->
+I set up a CI pipeline using GitHub Actions for both the frontend and the backend. Each pipeline consists of two stages: "Build" and "Publish", but the backend includes an additional "Integration test" stage. Both workflows slightly differ in design but the outcome for the stages "Build" & "Publish" are similar to each other.
 
-I set up a CI pipeline using GitHub Actions for both the frontend and the backend. The pipeline consists of two stages: "Build" and "Publish". They both slightly differ but the stages work similar to each other.
+These CI/CD pipelines enable the automated building, testing, and continuous deployment of both the frontend and the backend services.
 
 ### 2.3.1 Frontend
 
@@ -130,10 +136,12 @@ In the backend "Build" stage, the code is checked out, JDK 17 is set up, and Mav
 
 In the "Publish" stage, the repository is checked out, and the previously built artifacts are downloaded. Docker login is performed for the specified Docker registry. Docker image metadata is extracted, and the Docker image is built and pushed to DockerHub.
 
-These CI/CD pipelines enable the automated building, testing, and continuous deployment of both the frontend and the backend services.
+Finally, the "Integration test" stage uses tests which are written in Postman to test the API endpoints. At the time of writing, these tests are only written for the user-matching-service. Hoping to serve as a practical proof of concept that I know how it works.
 
 Although I successfully configured Keycloak for authentication and authorization in my application, integrating it into the CI-pipeline proved very difficult and time-consuming. I found out that it is possible to test Keycloak in the CI-pipeline using Testcontainers, but I did not have the opportunity to try and implement it due to time constraints.
 
+![Screenshot of the workflow file for the backend services with a successful run.](Media/all_jobs_workflow.png)
+*Screenshot of the workflow file for the backend services with a successful run.*
 
 Checkout the workflow files here:
 
@@ -185,7 +193,7 @@ In the previous semester, I wrote two documents: a research paper on agile metho
 📄 **[Agile in Practice](GP/LO3_AgileMethod/AgileMethods_InPractice.pdf)**
 
 ### 3.1.1 Additional Experience
-_Reserved for the report I want to write on the webinar on better user stories that I attended._
+<!-- TODO small review on webinar -->
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 3.2 Cultural differences and ethics (LO5)
@@ -204,15 +212,23 @@ During the previous semester, I conducted a process analysis of the group projec
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 # 4. Reflection
 
+This section looks back on the entire semester and I talk about what I have learned from things that went well, didn't work out so well and what my next steps will be.
+
 ## 4.1 What went well
 
 <!-- I learned a lot of new things. Worked with several new technologies and programs.  -->
 
+This semester I aimed to be a generalist. And I feel like I succeeded at doing so. I wanted to expand my boundaries and try a lot of new things: (Java, React, MongoDB, Keycloak, Figma, Microservices, to name a few). I also spend less time on a problem than usual, which is a huge improvement for me because in the past I would not move on to other things unless the problem at hand was fixed.
+
 ## 4.2 What could have gone better
 
 <!-- TODO Analysis Paralysis -->
+I have the tendency to get overwhelmed easily (as stated in the previous reflection). I tried to find ways to mitigate this later on in the semester. Playing it safe instead of envisioning some big project; as creativity can be both a blessing and a curse. But how do you know you're stuck in a loop when you think you're taking the right path? This semester taught me that I'm sometimes scared of bringing the new things I learned into practice, which brings me back to the cycle of analysis paralysis, a term often heard in the world of software development. 
 
 ## 4.3 Next steps
+
+The section about "Before the Project" in the book The Pragmatic Programmer helped me find a way to deal with a lot of the problems I struggled with. I learned that delivering something that doesn't suffice is always better than not to deliver something.
+
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 
 
