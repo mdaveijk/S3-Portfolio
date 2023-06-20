@@ -87,20 +87,20 @@ If I had more time, I would have added two additional services: One service woul
 
 Although the API gateway technically is not required, it is better for security and load balancing. The gateway can take care of security by handling authentication and authorization, protecting the microservices from unauthorized access. It is able to do its job in load balancing by distributing incoming requests across multiple instances of the microservices to optimize performance and handle increased traffic effectively. 
 
-The API gateway in my application delegates the authentication and authorization to Keycloak, which is properly configured. However, as mentioned in the [**Backend part of the CI/CD section of the Reader's Guide**](https://github.com/mdaveijk/S3-Portfolio/tree/main#232-Backend), this caused some issues in the CI-pipeline and required Testcontainers in order to work, which I did not have time for to implement. As a result, Keycloak is disabled for the final submission of this project to properly showcase the application. 
-You can read more about my experience with Keycloak in my [**Security Research**](Research/Security_Research_Identification_and_Authentication_Failures.md) starting under the section [**Possible solution: Using a Single Sign-On Service**](Possible solution: Using a Single Sign-On Service](Research/Security_Research_Identification_and_Authentication_Failures.md#5-possible-solution-using-a-single-sign-on-service).
+The API gateway in my application delegates the authentication and authorization to Keycloak, which is properly configured. However, as mentioned in the [**Backend part of the CI/CD section of the Reader's Guide**](../#232-Backend), this caused some issues in the CI-pipeline and required Testcontainers in order to work, which I did not have time for to implement. As a result, Keycloak is disabled for the final submission of this project to properly showcase the application. 
+You can read more about my experience with Keycloak in my [**Security Research**](../Research/Security_Research_Identification_and_Authentication_Failures.md) starting under the section [**Possible solution: Using a Single Sign-On Service**](../Research/Security_Research_Identification_and_Authentication_Failures.md#5-possible-solution-using-a-single-sign-on-service).
 
 ### 4.3 API Documentation
 In the [**README file of the backend monorepository**](https://github.com/mdaveijk/S3-IP-CineMatch/blob/main/README.md), I provided some instructions for setting up the services with Docker. Once the services are up and running, users can access the API documentation and interact with the API. I implemented the API documentation using Swagger/OpenAPI, which provides a clear and user-friendly interface for other developers to use. In addition, users can easily switch between my microservices and view their API documentation. 
 
-![Screenshot of the user-matching-service API documentation. Provided by Swagger.](Media/match_controller_documentation.png)
+![Screenshot of the user-matching-service API documentation. Provided by Swagger.](../Media/match_controller_documentation.png)
 _Screenshot of the user-matching-service API documentation. Provided by Swagger._
 
 Each controller request of every service is annotated with helpful HTTP status information, which is automatically picked up by Swagger and displayed to users in the API documentation. This helps users understand the expected status codes for each request.
 
 For example, the following image shows an example of a Match DELETE request in Swagger:
 
-![Example of what a DELETE request looks like in Swagger. Part of the user-matching-service.](Media/match_delete_documentation.png)
+![Example of what a DELETE request looks like in Swagger. Part of the user-matching-service.](../Media/match_delete_documentation.png)
 _Example of what a DELETE request looks like in Swagger. Part of the user-matching-service._
 
 
@@ -112,7 +112,7 @@ In the previous semester, I did a lot of research on the differences and use cas
 
 To better illustrate this, I made an Entity Relationship Diagram:
 
-![Entity Relationship Diagram - CineMatch](Media/Final_ERD.png)
+![Entity Relationship Diagram - CineMatch](../Media/Final_ERD.png)
 *Current version of the ERD.*
 
 Colours represent different locations/databases (a legend is added for clarity). For example, the microservices for *Preferences* and *Matching* have a NoSQL database because they're likely often going to change and in case more space is needed, NoSQL databases are also easier to scale, considering they scale horizontally. The *User* microservice on the other hand, is more likely to have a steady structure and might require complex queries in the long run, so a relational-database seemed more suitable. 
@@ -120,7 +120,7 @@ Colours represent different locations/databases (a legend is added for clarity).
 ### 5.2 Testing with different databases
 When it comes to testing, there are different approaches you can take. While setting up a containerized database like MariaDB with Testcontainers is an option, not only was I unable to further explore this option due to time constraints, but it is also a less common approach to the problem. I found out that most Java applications use a in-memory database, like H2, to conduct the testing on instead.[^2] It was a bit tricky to get this to work, but eventually after adding "Spring profiles" it did the trick.
 
-![Configuration class responsible for setting up the test database in the user-data-service.](Media/configure_test_database.png)
+![Configuration class responsible for setting up the test database in the user-data-service.](../Media/configure_test_database.png)
 _Configuration class responsible for setting up the test database in the user-data-service._
 
 ### 5.3 Hibernate (ORM)
@@ -147,7 +147,7 @@ Both JPA and Spring Data MongoDB each have their own syntax and specific annotat
 ```
 SQL annotations example             |  NoSQL annotations example
 :-------------------------:|:-------------------------:
-![SQL annotations example](Media/hibernate_annotations_sql.png)  |  ![NoSQL annotations example](Media/hibernate_annotations_nosql.png)
+![SQL annotations example](../Media/hibernate_annotations_sql.png)  |  ![NoSQL annotations example](../Media/hibernate_annotations_nosql.png)
 ```
 _Different annotations based on the type of database, side by side._
 

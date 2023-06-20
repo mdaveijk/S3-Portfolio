@@ -65,14 +65,15 @@ Furthermore, to make a well informed decision, I conducted a thorough comparison
 
 The reasoning behind my choices can also be found in the document. 
 
-📄 **[Full Stack Web Application - CineMatch](CineMatch/WebApplication_InPractice.md)** <br>
+📄 **[Full Stack Web Application - CineMatch](CineMatch/WebApplication_InPractice.md)** <br><br>
 Quick access to the five sections in the document: 
 - [**Frontend**](CineMatch/WebApplication_InPractice.md#2-frontend) 🌐
 - [**Distributed Communication**](CineMatch/WebApplication_InPractice.md#3-distributed-communication) 📡
 - [**Backend**](CineMatch/WebApplication_InPractice.md#4-backend)⚙️
 - [**Data Persistence**](CineMatch/WebApplication_InPractice.md#5-data-persistence) 🗄️
-- [**User Experience**](CineMatch/WebApplication_InPractice.md#6-user-experience) 🎨<br>
-The links to the repositories for the frontend and backend source code of CineMatch: <br>
+- [**User Experience**](CineMatch/WebApplication_InPractice.md#6-user-experience) 🎨<br><br>
+
+The links to the repositories for the frontend and backend source code of CineMatch: <br><br>
 🌐 **[CineMatch frontend](https://github.com/mdaveijk/S3-IP-CineMatch-Frontend)** | ⚙️ **[CineMatch backend](https://github.com/mdaveijk/S3-IP-CineMatch)**
 
 
