@@ -18,6 +18,8 @@ ___
 	- [2.1 The C4-model](#21-the-c4-model)
 		- [2.1.1 System Context](#211-system-context-diagram)
 		- [2.1.2 Container Diagram](#212-container-diagram)
+	- [2.2 Microservices architecture](#22-microservices-architecture)
+	- [2.3 Using REST](#23-using-rest)
 - [3. User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
 	- [3.1 Definition of Done](#31-definition-of-done)
 - [4. User Interface Sketches](#4-user-interface-sketches)
