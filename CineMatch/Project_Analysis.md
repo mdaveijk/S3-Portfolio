@@ -4,8 +4,8 @@
 ___
 |         |         |
 |:---------------:|:---------------:|
-|   Release:      |   8th of May 2023      |
-|   Version:          |   3          |
+|   Release:      |   21th of June 2023      |
+|   Version:          |   3.1         |
 |   Location:          |   Eindhoven          |
 |   Project owner:          |   Maurice Schippers          |
 ___
@@ -18,6 +18,8 @@ ___
 	- [2.1 The C4-model](#21-the-c4-model)
 		- [2.1.1 System Context](#211-system-context-diagram)
 		- [2.1.2 Container Diagram](#212-container-diagram)
+	- [2.2 Microservices architecture](#22-microservices-architecture)
+	- [2.3 Using REST](#23-using-rest)
 - [3. User Stories and Quality Measurement](#3-user-stories-and-quality-measurement)
 	- [3.1 Definition of Done](#31-definition-of-done)
 - [4. User Interface Sketches](#4-user-interface-sketches)
@@ -37,6 +39,7 @@ The need for a ‘buddy’ to do activities with is high nowadays. Especially af
 
 ## 2. System Architecture Overview
 
+
 ### 2.1 The C4-model
 The C4-model depicts a visual representation of the architecture of CineMatch. Making it easier to understand and communicate for both technical and non-technical stakeholders. Below are two levels of the model, System Context and the Container diagram. The System Context Diagram gives an overview of all the actors that are relevant for the application. The Container Diagram gives a look inside CineMatch and gives an overview of which elements are part of the entire software system. If required, a Component Diagram could be considered for a future release.
 
@@ -49,6 +52,24 @@ The reasoning behind OMDb API as the movie API of choice is because it is very s
 <img src="/Media/ContainerDiagram_CineMatch_v1.png" alt="CineMatch Container Diagram" width="600">
 The end-user interacts with the system through the front-end. The front-end communicates through HTTPS/JSON with the API Gateway which in turn then contacts the appropiate microservice with the request from the front-end. Each microservice has its own database based on the data it handles. For example, the Matching microservice has a NoSQL database because I expect the structure to change a lot. The API Gateway is shown to interact with the SSO service, but I have yet to confirm this as of the current release of this analysis and this is purely based on current research and my expectation. 
 Finally, the Movie microservice interacts with two seperate APIs, one being the OMDb API to retrieve data about movies and a scraper application specifically for cinema's. The scraper will look for movies current showing in the cinema of which the user requested and return that to the microservice which then requests for data about those movies from the OMDb API. The idea is to store the movie information for a certain time period so it won't have to request the API every time, which would not only be waste of requests but also has an impact on the performance of the application.
+
+### 2.2 Microservices architecture
+CineMatch benefits from a microservices architecture for several reasons. Firstly, it allows for better scalability and flexibility. Each microservice can be independently deployed, scaled, and maintained. Efficiently distributing the use of resources and handling increased traffic or workload in specific areas of the system.
+
+Secondly, a microservices architecture promotes loose coupling and modularity. Each microservice is responsible for a specific business goal or functionality, making it easier to understand, develop, and test. Changes or updates to one microservice do not affect the entire system, reducing the risk of unintended consequences and making it easier to introduce new features or enhancements.
+
+Additionally, microservices enable technology diversity. Different microservices can be built using different programming languages, frameworks, or technologies that best suit their specific requirements. This makes it possible to build the scraper application with Python, a language more commonly used to build web scrapers, but can still communicate with the Java applications without issues.
+
+Lastly, microservices contain fault isolation and resilience, especially with the *api-gateway* in place. If one microservice encounters an issue or fails, it does not bring down the entire system. The failure is contained within that specific microservice, and the rest of the system can continue to function. This isolation improves overall system reliability and availability.
+
+### 2.3 Using REST
+There is a number of reasons why the components in CineMatch benefit from using REST (Representational State Transfer) as the architectural style for communication. RESTful APIs make it easier for components to communicate and work together by providing a standardized and scalable approach. This promotes easy integration and collaboration between different services.
+
+Using RESTful APIs also enables statelessness, which simplifies the design and scalability of the system. Each request from a client contains all the necessary information for the server to process it, without relying on server-side session state. This allows components to be horizontally scaled and distributed, as requests can be handled independently without the need for shared state. Which is exactly what is needed in order to achieve concurrency within our system.
+
+Lastly, REST promotes loose coupling between components. Each component exposes their own set of resources and endpoints, providing a clear separation of concerns. This decoupling allows components to grow independently, making it easier to introduce changes or add new features without affecting other parts of the system.
+
+At the moment, none of the microservices require WebSockets. REST is sufficient for their communication. The potential use of WebSockets may be considered in the future when implementing the chat functionality within the system.
 
 ## 3. User Stories and Quality Measurement
 
@@ -102,18 +123,18 @@ When I started the project, I spent time considering the user flow and created t
 
 ### 4.1 Homepage (3 versions)
 
-To choose the best design for the homepage, I conducted a survey on social media for homepage designs found on dribbble. Also more about that process in the **[Web Application in Practice](WebApplication_InPractice.md#6-user-experience)** document. I made a top three out of these choices.
+To choose the best design for the homepage, I conducted a survey on social media for homepage designs found on dribbble. Also more about that process in the section about user experience in the **[Web Application in Practice](WebApplication_InPractice.md#62-finding-the-right-design)** document. I made a top three out of these choices.
 
 The first two designs both received six votes. The third version can be seen as a combination of the other two, but it was initially inspired by a different design I had come across.
 
-1. Design 1: <img src="/Media/Homepage_version1.png" alt="Homepage of CineMatch, version 1" width="800">
-	1. Participants liked the clear view of this design, which uses a three-column layout to make it easy to focus on the most important elements. The first column features a minimalist menu with labels that are turned 90 degrees, giving it a unique and modern look. Despite the unusual orientation, users appreciated that it didn't take up too much space on the page. The third column of the design features the media, which could include a large image of a movie poster or something cinema related to grab the user's attention. This visual element helps users quickly understand what the service is about and what they can expect to see. Overall, the design strikes a balance between simplicity, a modern look and functionality, making it easy to use while still providing all the necessary information. The results of the survey suggest that end-users are open to different design approaches and are willing to embrace new ideas.
+1. Design 1: <img src="/Media/Homepage_version_1.png" alt="Homepage of CineMatch, version 1" width="800">
+	- Participants liked the clear view of this design, which uses a three-column layout to make it easy to focus on the most important elements. The first column features a minimalist menu with labels that are turned 90 degrees, giving it a unique and modern look. Despite the unusual orientation, users appreciated that it didn't take up too much space on the page. The third column of the design features the media, which could include a large image of a movie poster or something cinema related to grab the user's attention. This visual element helps users quickly understand what the service is about and what they can expect to see. Overall, the design strikes a balance between simplicity, a modern look and functionality, making it easy to use while still providing all the necessary information. The results of the survey suggest that end-users are open to different design approaches and are willing to embrace new ideas.
 
 2. Design 2: <img src="/Media/Homepage_version_2.png" alt="Homepage of CineMatch, version 2" width="800">
-	1. Participants liked this design because of the aesthetic and its amount of space. In addition, I've received comments about it looking more trustworthy. The design that inspired this version had two drawings next to the "Get Started" button. No clutter and very inviting towards the audience. Users expressed a desire for a visually appealing background that would create a welcoming and comfortable atmosphere on the website, particularly around the central button, as this is where their focus lies. It's worth noting that this design was favored by participants with an artistic background, perhaps indicating a preference for aesthetics and visual appeal.
+	- Participants liked this design because of the aesthetic and its amount of space. In addition, I've received comments about it looking more trustworthy. The design that inspired this version had two drawings next to the "Get Started" button. No clutter and very inviting towards the audience. Users expressed a desire for a visually appealing background that would create a welcoming and comfortable atmosphere on the website, particularly around the central button, as this is where their focus lies. It's worth noting that this design was favored by participants with an artistic background, perhaps indicating a preference for aesthetics and visual appeal.
 
 3. Design 3 (3 votes): <img src="/Media/Homepage_version_3.png" alt="Homepage of CineMatch, combination of the other two" width="800">
-	1. Participants also liked the clear view of this design. The two-column design made it easy on what to focus on, accompanied by the classic top menu. It didn't overly complicate things, which is one of the main things to keep in mind when it comes to user experience. Interestingly, the third design appears to be a blend of the other two, featuring the top menu from design 2 and the media placement on the right from the first design.
+	- Participants also liked the clear view of this design. The two-column design made it easy on what to focus on, accompanied by the classic top menu. It didn't overly complicate things, which is one of the main things to keep in mind when it comes to user experience. Interestingly, the third design appears to be a blend of the other two, featuring the top menu from design 2 and the media placement on the right from the first design.
 
 ### 4.2 Preferences
 The preferences screen allows users to set their movie and genre preferences, as well as date, timeslot, maximum travel distance, and location. By providing this information, the system can better match users with compatible movie buddies based on their interests and schedules.
@@ -137,4 +158,4 @@ After selecting the CTA button "Find a Match", users will see this screen. It ha
 
 
 ## 5. Test Methodologies
-Due to the size of the test plan, there is a separate document that covers the test methodologies. This document details the various testing approaches we are utilizing throughout the software development lifecycle, including unit testing, integration testing, system testing, and acceptance testing. It also describes the specific tools and frameworks we are using to automate our testing processes and ensure the quality and reliability of our software product. Usability testing is covered under the User Experience section in the **[Web Application in Practice](WebApplication_InPractice.md#6-user-experience)** document.
+Due to the size of the quality plan, there is a separate document that covers the test methodologies: **[Quality plan](quality_plan.md)**. This document details the various testing approaches we are utilizing throughout the software development lifecycle, including unit testing, integration testing, system testing, and acceptance testing. It also describes the specific tools and frameworks I used to automate the testing processes and ensure the quality and reliability of CineMatch. Usability testing is covered under the User Experience section in the **[Web Application in Practice](WebApplication_InPractice.md#6-user-experience)** document.
