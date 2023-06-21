@@ -123,7 +123,7 @@ When I started the project, I spent time considering the user flow and created t
 
 ### 4.1 Homepage (3 versions)
 
-To choose the best design for the homepage, I conducted a survey on social media for homepage designs found on dribbble. Also more about that process in the **[Web Application in Practice](WebApplication_InPractice.md#6-user-experience)** document. I made a top three out of these choices.
+To choose the best design for the homepage, I conducted a survey on social media for homepage designs found on dribbble. Also more about that process in the section about user experience in the **[Web Application in Practice](WebApplication_InPractice.md#62-finding-the-right-design)** document. I made a top three out of these choices.
 
 The first two designs both received six votes. The third version can be seen as a combination of the other two, but it was initially inspired by a different design I had come across.
 
