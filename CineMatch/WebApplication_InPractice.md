@@ -235,7 +235,6 @@ In addition, to make the most out of the test, I took the opportunity to showcas
 
 Moving forward, I learned that early feedback is very valuable. I'm certain that by using the [**Splitting by interface**](../README.md#311-additional-experience) agile technique, it will be easier to present interactive UI sooner to the client in future projects.
 
----
 [^1]: See [OMDb API - The Open Movie Database](https://www.omdbapi.com/)
 [^2]: See [Spring Boot Microservices Level 1: Communication and Discovery by Java Brains](https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZSKAFG6aCDVDP86Qx4lNas)
 [^3]: See [Self-Contained Testing Using an In-Memory Database](https://www.baeldung.com/spring-jpa-test-in-memory-database)
