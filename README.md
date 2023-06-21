@@ -93,10 +93,14 @@ I was given the **Proficient** rating.
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.2 Software quality (LO2)
 
-The quality plan is a central document where all tests are documented to keep things readable.
+For this learning outcome, I feel like I could have done more testing for the different aspects of the project. The testing of certain functional and non-functional parts got delayed, especially when I had a lot of struggle getting the frontend application to work. Nevertheless, the tests that were successful were very informative, and I was even able to automate certain tests (as can be read in the [**CI/CD section**](#23-ci-cd-lo4)), which I am glad ended up working. 
+
+As mentioned in the [**Reflection section**](#43-next-steps), I plan to use a Test-driven approach in the future to avoid such issues.
 
 ### 2.2.1 Quality plan
-This document contains all the testing I have done for CineMatch. Including the ones discussed in the researches.
+The quality plan is a central document where all tests are documented to keep things readable. It contains all the testing I have done for CineMatch. Including the ones discussed in the researches and elsewhere. 
+
+Check out the plan here: [**Quality Plan**](CineMatch/Quality_Plan.md) 👨🏻‍🔬🧪
 
 ### 2.2.2 Research on identification and authentication failures
 
