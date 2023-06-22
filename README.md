@@ -117,8 +117,17 @@ Read more about it here: [**Security Research**](Research/Security_Research_Iden
 
 ### 2.2.3 Research on concurrency
 
+I did research on how to effectively implement concurrency within a distributed web application.
+Looking back, I definitely should not have picked such a complicated topic to do research on as it took me a long time to complete. Along the way I changed it to be a more general research in order to keep things easier to understand for myself and the reader. Anyways, the research report covers the following subjects:
+
+- a definition of the subject and parallelism;
+- an explanation behind the complexity of the subject;
+- concurrency design patterns; 
+- finding ways to improve a web application through concurrency manually and with automated tooling.
+
+As I was already working on building a microservices architecture at the time, it made me understand the elements that are involved much better and why a microservices architecture can help with achieving concurrency. If anything, I did notice a significant difference in speed and communication with my own application and the one created in the group project from last semester.
+
 Read more about it here: [**Concurrency Research**](Research/Concurrency_Research.md) 🕛
-<!-- TODO -->
 
 **[⬆️ Back to Table of Contents](#table-of-contents)**
 ## 2.3 CI/CD (LO4)
